@@ -18,7 +18,7 @@ export default function Header() {
 						<ul id="nav">
 							<li><a href="enterprise/index.html" className="">Invest in nature</a></li>
 							<li><a href="partner/index.html" className="">Develop a project</a></li>
-							<li><a href="../project/index.html" className="">Explore projects</a></li>
+							<li><a href="/explore" className="">Explore projects</a></li>
 							<li><a href="technology/index.html" className="">Resources</a></li>
 							<li className="dropdown-menu">
 								<a href="#" data-more className="dropdown-opener">About</a>
