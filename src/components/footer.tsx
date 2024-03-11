@@ -9,7 +9,7 @@ export default function Footer () {
 						<h2>Build your nature strategy with Ocean Pulse</h2>
 						<ul className="btn-group">
 							<li>
-								<a href="get-started/index.html" target="" className="btn  ">Get Started</a>
+								<a href="/get-started" target="" className="btn  ">Get Started</a>
 							</li>
 						</ul>
 					</div>
@@ -18,12 +18,10 @@ export default function Footer () {
 						<div className="row">
 							<div className="col-lg-4">
 								<div className="footer-logo">
-									<a href="index.html">
-										<img alt="Ocean Pulse" data-src="wp-content/uploads/2024/01/logo-white.svg"
+									<a href="/">
+										<img alt="Ocean Pulse"
 												 className="attachment-large lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img src="wp-content/uploads/2024/01/logo-white.svg"
-																	 className="attachment-large" alt="Ocean Pulse"/></noscript>
+												 src="/images/logo-white.svg"/>
 									</a>
 								</div>
 							</div>
@@ -35,23 +33,23 @@ export default function Footer () {
 												<span className="label active" data-more>COMPANY</span>
 												<ul className="footer-nav">
 													<li><a href="#" className="">Our mission</a></li>
-													<li><a href="technology/index.html" className="">Our tech</a>
+													<li><a href="/technology" className="">Our tech</a>
 													</li>
 													<li><a href="#" className="">Careers</a></li>
-													<li><a href="get-started/index.html" className="">Contact</a>
+													<li><a href="/get-started" className="">Contact</a>
 													</li>
 												</ul>
 											</div>
 											<div className="col">
 												<span className="label" data-more>SOLUTIONS</span>
 												<ul className="footer-nav">
-													<li><a href="enterprise/index.html" className="">Invest in
+													<li><a href="/enterprise" className="">Invest in
 														nature</a></li>
-													<li><a href="partner/index.html" className="">Develop a
+													<li><a href="/partner" className="">Develop a
 														project</a></li>
-													<li><a href="../project/index.html" className="">Explore
+													<li><a href="/project" className="">Explore
 														projects</a></li>
-													<li><a href="faq/index.html" className="">FAQs</a></li>
+													<li><a href="/faq" className="">FAQs</a></li>
 												</ul>
 											</div>
 											<div className="col">
@@ -81,10 +79,10 @@ export default function Footer () {
 								<div className="copyright">Copyright © 2024 Ocean Pulse, Inc.</div>
 							</div>
 							<div className="col-sm-8 col-md-6 col-lg-7">
-								<ul className="terms-conditions">
-									<li><a href="terms/index.html" className="">Terms of use</a></li>
-									<li><a href="privacy/index.html" className="">Privacy policy</a></li>
-									<li><a href="copyright-intellectual-property/index.html"
+								<ul className="/terms-conditions">
+									<li><a href="/terms" className="">Terms of use</a></li>
+									<li><a href="/privacy" className="">Privacy policy</a></li>
+									<li><a href="/copyright-intellectual-property"
 												 className="">Copyright</a></li>
 								</ul>
 							</div>
@@ -92,11 +90,11 @@ export default function Footer () {
 								<div className="social-networks-wrap">
 									<ul className="social-networks">
 										<li>
-											<a href="https://twitter.com/pachamainc" className="icon-x-c"><span
+											<a href="https://twitter.com" className="icon-x-c"><span
 												className="sr-only">x</span></a>
 										</li>
 										<li>
-											<a href="https://www.linkedin.com/company/pachama/"
+											<a href="https://www.linkedin.com"
 												 className="icon-linkedin-c"><span
 												className="sr-only">linkedin</span></a>
 										</li>

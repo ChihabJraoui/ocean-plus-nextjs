@@ -1,6 +1,8 @@
 import Script from "next/script";
 import Layout from "@app/components/layout";
+import React from "react";
 
+const heroScrollSectionHeight = {"--section-height": "80vh"} as React.CSSProperties;
 export default function Home() {
 	return (
 		<Layout>
@@ -15,10 +17,10 @@ export default function Home() {
 								nature.</p>
 							<ul className="btn-group">
 								<li>
-									<a href="enterprise/index.html" target="" className="btn  ">Invest in nature</a>
+									<a href="/enterprise" target="" className="btn  ">Invest in nature</a>
 								</li>
 								<li>
-									<a href="partner/index.html" target="" className="btn btn-secondary">Start a
+									<a href="/partner" target="" className="btn btn-secondary">Start a
 										Project</a>
 								</li>
 							</ul>
@@ -28,22 +30,16 @@ export default function Home() {
 			</section>
 
 			<section className="hero-scroll-animation" style={{"height": "80vh"}}>
-				<div className="hero-scroll-animation--scroller">
+				<div className="hero-scroll-animation--scroller" style={heroScrollSectionHeight}>
 					<div className="img image-primary">
-						<img alt="heatmap" data-src="/images/heatmap-1-min-1-65c6444a8d1b5.jpg"
+						<img alt="heatmap"
 								 className="attachment-large-1600 lazyload"
-								 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						<noscript><img src="/images/heatmap-1-min-1-65c6444a8d1b5.jpg"
-													 className="attachment-large-1600" alt="heatmap"/></noscript>
+								 src="/images/heatmap-1-min-1-65c6444a8d1b5.jpg" />
 					</div>
 					<div className="img image-secondary">
 						<img alt="heatmap-1-min-1-65c6444a8d1b5"
-								 data-src="/images/heatmap-1-min-1-65c6444a8d1b5.jpg"
 								 className="attachment-large-1600 lazyload"
-								 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						<noscript><img src="/images/heatmap-1-min-1-65c6444a8d1b5.jpg"
-													 className="attachment-large-1600" alt="heatmap-1-min-1-65c6444a8d1b5"/>
-						</noscript>
+								 src="/images/heatmap-1-min-1-65c6444a8d1b5.jpg"/>
 					</div>
 				</div>
 			</section>
@@ -57,7 +53,7 @@ export default function Home() {
 								an income restoring nature, Ocean Pulse can help. </h3>
 							<ul className="btn-group">
 								<li>
-									<a href="#" target="" className="btn  ">discover pachama</a>
+									<a href="#" target="" className="btn">discover pachama</a>
 								</li>
 							</ul>
 						</div>
@@ -94,17 +90,16 @@ export default function Home() {
 												<source media="(max-width: 767px)"
 																srcSet="/images/david-clode-ocrre9e1aro-unsplash-darker-tree-edit2-copy-2-65c395718f7ab-1600x737.jpg"/>
 												<img alt=""
-														 data-src="/images/david-clode-ocrre9e1aro-unsplash-darker-tree-edit2-copy-2-65c395718f7ab-1600x737.jpg"
 														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+														 src="/images/david-clode-ocrre9e1aro-unsplash-darker-tree-edit2-copy-2-65c395718f7ab-1600x737.jpg"/>
 												<noscript><img
 													src="/images/david-clode-ocrre9e1aro-unsplash-darker-tree-edit2-copy-2-65c395718f7ab-1600x737.jpg"
 													alt=""/></noscript>
 											</picture>
 											<div className="data-img">
-												<img alt="" data-src="/images/carbon-graph.svg"
+												<img alt=""
 														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+														 src="/images/carbon-graph.svg"/>
 												<noscript><img src="/images/carbon-graph.svg"
 																			 alt=""/></noscript>
 											</div>
@@ -116,18 +111,16 @@ export default function Home() {
 												<source media="(max-width: 767px)"
 																srcSet="/images/kingfisher-no-branch-rainbow-copy3-1-65c5056640fa7.jpg"/>
 												<img alt=""
-														 data-src="/images/kingfisher-no-branch-rainbow-copy3-1-65c5056640fa7.jpg"
 														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+														 src="/images/kingfisher-no-branch-rainbow-copy3-1-65c5056640fa7.jpg"/>
 												<noscript><img
 													src="/images/kingfisher-no-branch-rainbow-copy3-1-65c5056640fa7.jpg"
 													alt=""/></noscript>
 											</picture>
 											<div className="data-img">
 												<img alt=""
-														 data-src="/images/Frame-2147204995.svg"
 														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+														 src="/images/Frame-2147204995.svg"/>
 												<noscript><img src="/images/Frame-2147204995.svg"
 																			 alt=""/></noscript>
 											</div>
@@ -139,18 +132,16 @@ export default function Home() {
 												<source media="(max-width: 767px)"
 																srcSet="/images/community2-2-65c505aa95e6b.jpg"/>
 												<img alt=""
-														 data-src="/images/community2-2-65c505aa95e6b.jpg"
 														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+														 src="/images/community2-2-65c505aa95e6b.jpg" />
 												<noscript><img
 													src="/images/community2-2-65c505aa95e6b.jpg"
 													alt=""/></noscript>
 											</picture>
 											<div className="data-img">
 												<img alt=""
-														 data-src="/images/Frame-2147204995-1.svg"
 														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+														 src="/images/Frame-2147204995-1.svg" />
 												<noscript><img
 													src="/images/Frame-2147204995-1.svg"
 													alt=""/></noscript>
@@ -173,9 +164,8 @@ export default function Home() {
 									<div className="card card-links">
 										<div className="img">
 											<img alt=""
-													 data-src="/images/card-img03-1024x901-1-65c36cea3d594.jpg"
 													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+													 src="/images/card-img03-1024x901-1-65c36cea3d594.jpg"/>
 											<noscript><img
 												src="/images/card-img03-1024x901-1-65c36cea3d594.jpg"
 												alt=""/></noscript>
@@ -187,7 +177,7 @@ export default function Home() {
 												carbon projects to meet your climate goals. </p>
 											<ul className="btn-group">
 												<li>
-													<a href="enterprise/index.html" target=""
+													<a href="/enterprise" target=""
 														 className="btn btn-secondary-w">Learn More</a>
 												</li>
 											</ul>
@@ -198,9 +188,8 @@ export default function Home() {
 									<div className="card card-links">
 										<div className="img">
 											<img alt=""
-													 data-src="/images/card-img04-1024x901-1-65c36cea389b3.jpg"
 													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+													 src="/images/card-img04-1024x901-1-65c36cea389b3.jpg" />
 											<noscript><img
 												src="/images/card-img04-1024x901-1-65c36cea389b3.jpg"
 												alt=""/></noscript>
@@ -212,7 +201,7 @@ export default function Home() {
 												measure impact.</p>
 											<ul className="btn-group">
 												<li>
-													<a href="partner/index.html" target=""
+													<a href="/partner" target=""
 														 className="btn btn-secondary-w">Learn More</a>
 												</li>
 											</ul>
@@ -235,576 +224,118 @@ export default function Home() {
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt=""
-										data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/Bertelsmann_Logo_2016-1-300x55.png" />
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="107"
-								alt="" data-src="/images/Workday_logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="107"
-									alt="" data-src="/images/Workday_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="107"
-										alt="" data-src="/images/Workday_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="107"
-											alt="" data-src="/images/Workday_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="107"
-											src="/images/Workday_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/Workday_logo.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/Shopify-Black.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Shopify-Black.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Shopify-Black.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Shopify-Black.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Shopify-Black.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/Shopify-Black.svg" />
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="100"
-								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/MercadoLibre.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/MercadoLibre.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/MercadoLibre.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/MercadoLibre.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/MercadoLibre.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="120"
 								data-width-mb="60"
-								alt="" data-src="/images/Salesforce.com_logo.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/Salesforce.com_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/Salesforce.com_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/Salesforce.com_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/Salesforce.com_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/Salesforce.com_logo.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/NESPRESSO_LOGO_BLACK.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/NESPRESSO_LOGO_BLACK.svg"/>
 						</div>
 						<div className="logo">
 							<img
-								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									alt="" data-src="/images/Airbnb_Logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										alt="" data-src="/images/Airbnb_Logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											alt="" data-src="/images/Airbnb_Logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											src="/images/Airbnb_Logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/Airbnb_Logo.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="100"
-								alt="" data-src="/images/bcg.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/bcg.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/bcg.svg" className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/bcg.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/bcg.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/bcg.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Duolingo_wordmark_gray_RGB.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/Duolingo_wordmark_gray_RGB.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/Flexport.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Flexport.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Flexport.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Flexport.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Flexport.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/Flexport.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/athletic-greens-vector-logo.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/athletic-greens-vector-logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/athletic-greens-vector-logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/athletic-greens-vector-logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/athletic-greens-vector-logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/athletic-greens-vector-logo.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="100"
 								data-width-mb="60"
-								alt="" data-src="/images/Church__Dwight_logo.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="100"
-									data-width-mb="60"
-									alt="" data-src="/images/Church__Dwight_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="100"
-										data-width-mb="60"
-										alt="" data-src="/images/Church__Dwight_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="100"
-											data-width-mb="60"
-											alt="" data-src="/images/Church__Dwight_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="100"
-											data-width-mb="60"
-											src="/images/Church__Dwight_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/Church__Dwight_logo.svg"/>
 						</div>
 						<div className="logo">
 							<img
 								width="120"
 								data-width-mb="60"
-								alt="" data-src="/images/vuori-1.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/vuori-1.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/vuori-1.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/vuori-1.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/vuori-1.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/vuori-1.svg"/>
 						</div>
 						<div className="logo cloned">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt=""
-										data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/Bertelsmann_Logo_2016-1-300x55.png"/>
 						</div>
 						<div className="logo cloned">
 							<img
 								width="180"
 								data-width-mb="107"
-								alt="" data-src="/images/Workday_logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="107"
-									alt="" data-src="/images/Workday_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="107"
-										alt="" data-src="/images/Workday_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="107"
-											alt="" data-src="/images/Workday_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="107"
-											src="/images/Workday_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/Workday_logo.svg"/>
 						</div>
 						<div className="logo cloned">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/Shopify-Black.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Shopify-Black.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Shopify-Black.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Shopify-Black.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Shopify-Black.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/Shopify-Black.svg"/>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -812,35 +343,6 @@ export default function Home() {
 								data-width-mb="100"
 								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/MercadoLibre.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/MercadoLibre.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/MercadoLibre.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/MercadoLibre.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -849,35 +351,6 @@ export default function Home() {
 								alt="" data-src="/images/Salesforce.com_logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/Salesforce.com_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/Salesforce.com_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/Salesforce.com_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/Salesforce.com_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -886,61 +359,11 @@ export default function Home() {
 								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/NESPRESSO_LOGO_BLACK.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
 								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									alt="" data-src="/images/Airbnb_Logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										alt="" data-src="/images/Airbnb_Logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											alt="" data-src="/images/Airbnb_Logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											src="/images/Airbnb_Logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -948,33 +371,6 @@ export default function Home() {
 								data-width-mb="100"
 								alt="" data-src="/images/bcg.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/bcg.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/bcg.svg" className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/bcg.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/bcg.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -983,36 +379,6 @@ export default function Home() {
 								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Duolingo_wordmark_gray_RGB.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1020,34 +386,6 @@ export default function Home() {
 								data-width-mb="117"
 								alt="" data-src="/images/Flexport.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Flexport.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Flexport.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Flexport.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Flexport.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1056,36 +394,6 @@ export default function Home() {
 								alt="" data-src="/images/athletic-greens-vector-logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/athletic-greens-vector-logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/athletic-greens-vector-logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/athletic-greens-vector-logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/athletic-greens-vector-logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1094,35 +402,6 @@ export default function Home() {
 								alt="" data-src="/images/Church__Dwight_logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="100"
-									data-width-mb="60"
-									alt="" data-src="/images/Church__Dwight_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="100"
-										data-width-mb="60"
-										alt="" data-src="/images/Church__Dwight_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="100"
-											data-width-mb="60"
-											alt="" data-src="/images/Church__Dwight_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="100"
-											data-width-mb="60"
-											src="/images/Church__Dwight_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1130,34 +409,6 @@ export default function Home() {
 								data-width-mb="60"
 								alt="" data-src="/images/vuori-1.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/vuori-1.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/vuori-1.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/vuori-1.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/vuori-1.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 					</div>
 					<div className="logo-list cloned">
@@ -1168,37 +419,6 @@ export default function Home() {
 								alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt=""
-										data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1206,35 +426,6 @@ export default function Home() {
 								data-width-mb="107"
 								alt="" data-src="/images/Workday_logo.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="107"
-									alt="" data-src="/images/Workday_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="107"
-										alt="" data-src="/images/Workday_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="107"
-											alt="" data-src="/images/Workday_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="107"
-											src="/images/Workday_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1242,35 +433,6 @@ export default function Home() {
 								data-width-mb="117"
 								alt="" data-src="/images/Shopify-Black.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Shopify-Black.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Shopify-Black.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Shopify-Black.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Shopify-Black.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1278,35 +440,6 @@ export default function Home() {
 								data-width-mb="100"
 								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/MercadoLibre.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/MercadoLibre.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/MercadoLibre.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/MercadoLibre.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1315,35 +448,6 @@ export default function Home() {
 								alt="" data-src="/images/Salesforce.com_logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/Salesforce.com_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/Salesforce.com_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/Salesforce.com_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/Salesforce.com_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1352,61 +456,11 @@ export default function Home() {
 								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/NESPRESSO_LOGO_BLACK.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
 								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									alt="" data-src="/images/Airbnb_Logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										alt="" data-src="/images/Airbnb_Logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											alt="" data-src="/images/Airbnb_Logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											src="/images/Airbnb_Logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1414,33 +468,6 @@ export default function Home() {
 								data-width-mb="100"
 								alt="" data-src="/images/bcg.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/bcg.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/bcg.svg" className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/bcg.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/bcg.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1449,36 +476,6 @@ export default function Home() {
 								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Duolingo_wordmark_gray_RGB.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1486,34 +483,6 @@ export default function Home() {
 								data-width-mb="117"
 								alt="" data-src="/images/Flexport.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Flexport.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Flexport.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Flexport.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Flexport.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1522,36 +491,6 @@ export default function Home() {
 								alt="" data-src="/images/athletic-greens-vector-logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/athletic-greens-vector-logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/athletic-greens-vector-logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/athletic-greens-vector-logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/athletic-greens-vector-logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1560,35 +499,6 @@ export default function Home() {
 								alt="" data-src="/images/Church__Dwight_logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="100"
-									data-width-mb="60"
-									alt="" data-src="/images/Church__Dwight_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="100"
-										data-width-mb="60"
-										alt="" data-src="/images/Church__Dwight_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="100"
-											data-width-mb="60"
-											alt="" data-src="/images/Church__Dwight_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="100"
-											data-width-mb="60"
-											src="/images/Church__Dwight_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo">
 							<img
@@ -1596,34 +506,6 @@ export default function Home() {
 								data-width-mb="60"
 								alt="" data-src="/images/vuori-1.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/vuori-1.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/vuori-1.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/vuori-1.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/vuori-1.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1632,37 +514,6 @@ export default function Home() {
 								alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt=""
-										data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1670,35 +521,6 @@ export default function Home() {
 								data-width-mb="107"
 								alt="" data-src="/images/Workday_logo.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="107"
-									alt="" data-src="/images/Workday_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="107"
-										alt="" data-src="/images/Workday_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="107"
-											alt="" data-src="/images/Workday_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="107"
-											src="/images/Workday_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1706,35 +528,6 @@ export default function Home() {
 								data-width-mb="117"
 								alt="" data-src="/images/Shopify-Black.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Shopify-Black.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Shopify-Black.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Shopify-Black.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Shopify-Black.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1742,35 +535,6 @@ export default function Home() {
 								data-width-mb="100"
 								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/MercadoLibre.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/MercadoLibre.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/MercadoLibre.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/MercadoLibre.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1779,35 +543,6 @@ export default function Home() {
 								alt="" data-src="/images/Salesforce.com_logo.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/Salesforce.com_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/Salesforce.com_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/Salesforce.com_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/Salesforce.com_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1816,61 +551,11 @@ export default function Home() {
 								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/NESPRESSO_LOGO_BLACK.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
 								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									alt="" data-src="/images/Airbnb_Logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										alt="" data-src="/images/Airbnb_Logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											alt="" data-src="/images/Airbnb_Logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											src="/images/Airbnb_Logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1878,33 +563,6 @@ export default function Home() {
 								data-width-mb="100"
 								alt="" data-src="/images/bcg.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="100"
-									alt="" data-src="/images/bcg.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="100"
-										alt="" data-src="/images/bcg.svg" className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="100"
-											alt="" data-src="/images/bcg.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="100"
-											src="/images/bcg.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1913,36 +571,6 @@ export default function Home() {
 								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
 								className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Duolingo_wordmark_gray_RGB.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
@@ -1950,144 +578,29 @@ export default function Home() {
 								data-width-mb="117"
 								alt="" data-src="/images/Flexport.svg" className="lazyload"
 								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/Flexport.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/Flexport.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt="" data-src="/images/Flexport.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/Flexport.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
 						</div>
 						<div className="logo cloned">
 							<img
 								width="180"
 								data-width-mb="117"
-								alt="" data-src="/images/athletic-greens-vector-logo.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="180"
-									data-width-mb="117"
-									alt="" data-src="/images/athletic-greens-vector-logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="180"
-										data-width-mb="117"
-										alt="" data-src="/images/athletic-greens-vector-logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="180"
-											data-width-mb="117"
-											alt=""
-											data-src="/images/athletic-greens-vector-logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="180"
-											data-width-mb="117"
-											src="/images/athletic-greens-vector-logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/athletic-greens-vector-logo.svg"/>
 						</div>
 						<div className="logo cloned">
 							<img
 								width="100"
 								data-width-mb="60"
-								alt="" data-src="/images/Church__Dwight_logo.svg"
+								alt=""
 								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="100"
-									data-width-mb="60"
-									alt="" data-src="/images/Church__Dwight_logo.svg"
-									className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="100"
-										data-width-mb="60"
-										alt="" data-src="/images/Church__Dwight_logo.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="100"
-											data-width-mb="60"
-											alt="" data-src="/images/Church__Dwight_logo.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="100"
-											data-width-mb="60"
-											src="/images/Church__Dwight_logo.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								src="/images/Church__Dwight_logo.svg"/>
 						</div>
 						<div className="logo cloned">
 							<img
 								width="120"
 								data-width-mb="60"
-								alt="" data-src="/images/vuori-1.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript>
-								<img
-									width="120"
-									data-width-mb="60"
-									alt="" data-src="/images/vuori-1.svg" className="lazyload"
-									src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img
-										width="120"
-										data-width-mb="60"
-										alt="" data-src="/images/vuori-1.svg"
-										className="lazyload"
-										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img
-											width="120"
-											data-width-mb="60"
-											alt="" data-src="/images/vuori-1.svg"
-											className="lazyload"
-											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript><img
-											width="120"
-											data-width-mb="60"
-											src="/images/vuori-1.svg"
-											alt=""/></noscript>
-									</noscript>
-								</noscript>
-							</noscript>
+								alt="" className="lazyload"
+								src="/images/vuori-1.svg"/>
 						</div>
 					</div>
 				</div>
@@ -2111,7 +624,7 @@ export default function Home() {
 														Action</a>
 												</li>
 												<li>
-													<a href="get-started/index.html" target=""
+													<a href="/get-started" target=""
 														 className="btn btn-secondary">Contact us</a>
 												</li>
 											</ul>
@@ -2182,12 +695,8 @@ export default function Home() {
 						<div className="col-lg-offset-1 col-md-8 col-lg-7">
 							<div className="quote-img">
 								<img alt="quote-img-65c3722dc6ebc"
-										 data-src="/images/quote-img-65c3722dc6ebc-1024x1019.jpg"
 										 className="attachment-large lazyload"
-										 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript><img
-									src="/images/quote-img-65c3722dc6ebc-1024x1019.jpg"
-									className="attachment-large" alt="quote-img-65c3722dc6ebc"/></noscript>
+										 src="/images/quote-img-65c3722dc6ebc-1024x1019.jpg"/>
 							</div>
 						</div>
 						<div className="col-lg-offset-1 col-md-8 col-lg-6">
@@ -2221,13 +730,8 @@ export default function Home() {
 					<div className="cta-box">
 						<div className="img">
 							<img alt="cta-img-1536x553-1-65c37264b3dcf"
-									 data-src="/images/cta-img-1536x553-1-65c37264b3dcf.jpg"
 									 className="attachment-large-1600 lazyload"
-									 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-							<noscript><img src="/images/cta-img-1536x553-1-65c37264b3dcf.jpg"
-														 className="attachment-large-1600"
-														 alt="cta-img-1536x553-1-65c37264b3dcf"/>
-							</noscript>
+									 src="/images/cta-img-1536x553-1-65c37264b3dcf.jpg"/>
 						</div>
 						<div className="cta-background-dots-animation"></div>
 						<div className="cta-txt">
@@ -2235,7 +739,7 @@ export default function Home() {
 								<p>Chat with our experts to design a portfolio that meets your needs</p>
 							<ul className="btn-group">
 								<li>
-									<a href="get-started/index.html" target="" className="btn  ">Get Started</a>
+									<a href="/get-started" target="" className="btn  ">Get Started</a>
 								</li>
 							</ul>
 						</div>
@@ -2261,14 +765,8 @@ export default function Home() {
 												<source media="(max-width: 743px)"
 																srcSet="/images/alex-diaz-rjycnt2hewy.jpg"/>
 												<img alt="alex-diaz-rjycnt2hewy-unsplash-65c4dc17c0492-1-65c5f4281a32f"
-														 data-src="/images/alex-diaz-rjycnt2hewy.jpg"
 														 className="attachment-medium_large lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/alex-diaz-rjycnt2hewy.jpg"
-													className="attachment-medium_large"
-													alt="alex-diaz-rjycnt2hewy-unsplash-65c4dc17c0492-1-65c5f4281a32f"/>
-												</noscript>
+														 src="/images/alex-diaz-rjycnt2hewy.jpg"/>
 											</picture>
 										</div>
 										<div className="card-content">
@@ -2288,13 +786,8 @@ export default function Home() {
 												<source media="(max-width: 743px)"
 																srcSet="/images/Corredoresdevida-00048-scaled-1-768x431.jpg"/>
 												<img alt="Corredoresdevida-00048-scaled"
-														 data-src="/images/Corredoresdevida-00048-scaled-1-768x431.jpg"
 														 className="attachment-medium_large lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/Corredoresdevida-00048-scaled-1-768x431.jpg"
-													className="attachment-medium_large"
-													alt="Corredoresdevida-00048-scaled"/></noscript>
+														 src="/images/Corredoresdevida-00048-scaled-1-768x431.jpg"/>
 											</picture>
 										</div>
 										<div className="card-content">
@@ -2315,13 +808,8 @@ export default function Home() {
 																srcSet="/images/copy-of-timothy.jpg"/>
 												<img
 													alt="copy-of-timothy-l-brock-q7duorwjz3i-unsplash-scaled-65c5f52200ef4"
-													data-src="/images/copy-of-timothy.jpg"
 													className="attachment-medium_large lazyload"
-													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img src="/images/copy-of-timothy.jpg"
-																			 className="attachment-medium_large"
-																			 alt="copy-of-timothy-l-brock-q7duorwjz3i-unsplash-scaled-65c5f52200ef4"/>
-												</noscript>
+													src="/images/copy-of-timothy.jpg"/>
 											</picture>
 										</div>
 										<div className="card-content">
@@ -2340,13 +828,8 @@ export default function Home() {
 												<source media="(max-width: 743px)"
 																srcSet="/images/copy-of-junel-mujar.jpg"/>
 												<img alt="copy-of-junel-mujar-fr3aggtpzuu-unsplash-scaled-65c5f55d16504"
-														 data-src="/images/copy-of-junel-mujar.jpg"
 														 className="attachment-medium_large lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img src="/images/copy-of-junel-mujar.jpg"
-																			 className="attachment-medium_large"
-																			 alt="copy-of-junel-mujar-fr3aggtpzuu-unsplash-scaled-65c5f55d16504"/>
-												</noscript>
+														 src="/images/copy-of-junel-mujar.jpg"/>
 											</picture>
 										</div>
 										<div className="card-content">

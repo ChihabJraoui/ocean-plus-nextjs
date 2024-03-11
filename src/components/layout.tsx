@@ -6,8 +6,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<div id="page-loader">
-				<img alt="Loading..." data-src="/images/loader.gif" className="lazyload"
-						 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+				<img alt="Loading..." className="lazyload"
+						 src="/images/loader.gif" />
 				<noscript><img src="/images/loader.gif" alt="Loading..."/></noscript>
 			</div>
 			<div id="wrapper">
@@ -343,9 +343,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 				</div>
 			</div>
 
-			<script type="text/javascript" src="../js.hsforms.net/forms/current.js" id="base-theme-hsforms-js"></script>
-			<script type="text/javascript" id="hs-script-loader" async defer
-							src="../js.hs-scripts.com/21158180.js"></script>
+			{/*<script type="text/javascript" src="../js.hsforms.net/forms/current.js" id="base-theme-hsforms-js"></script>*/}
+			{/*<script type="text/javascript" id="hs-script-loader" async defer*/}
+			{/*				src="../js.hs-scripts.com/21158180.js"></script>*/}
 			<Script id="base-theme-script-js" src="/js/appa823.js?id=2c21442761bd58ede18e"/>
 
 			{/*<Script>

@@ -23,11 +23,6 @@ export default function Document() {
 							id="jquery-core-js"></script>
 			<script type="text/javascript" src="/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
 							id="jquery-migrate-js"></script>
-			<link rel='shortlink' href='index.html'/>
-			<link rel="alternate" type="application/json+oembed"
-						href="wp-json/oembed/1.0/embedd072.json?url=https%3A%2F%2Fpachama.com%2F"/>
-			<link rel="alternate" type="text/xml+oembed"
-						href="wp-json/oembed/1.0/embed140d?url=https%3A%2F%2Fpachama.com%2F&amp;format=xml"/>
 		</Head>
 		<body className="home">
 			<Main />
