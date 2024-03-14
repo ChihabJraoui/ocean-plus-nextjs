@@ -1,5 +1,6 @@
 import React from "react";
 import {CSSProperties} from "react";
+import styles from "./Project.module.scss";
 
 const spanStyle = {
 	boxSizing: "border-box",
@@ -38,7 +39,7 @@ export default function Project(props) {
 	const { data } = props;
 
 	return (
-		<div className="css-knybk">
+		<div className={styles["css-knybk"]}>
 			<span style={spanStyle}>
 				<img src={data?.image}
 						 decoding="async"
@@ -47,18 +48,20 @@ export default function Project(props) {
 						 style={imgStyle}
 						 sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw" />
 			</span>
-			<div className="css-qwl8h7">
-				<div className="css-wh3fb4">
-					<div className="css-1tsbzs">
-						<div className="css-b74377">
-							<p className="chakra-text css-cimxt8">{data?.category}</p>
-							<h5 className="chakra-heading css-1j0nf7q">{data?.title}</h5>
-							<p className="chakra-text css-1m942b8">
-								<img className="chakra-icon css-mblvt0" alt="BR" width="24" height="24"
+			<div className={styles["css-qwl8h7"]}>
+				<div className={styles["css-wh3fb4"]}>
+					<div className={styles["css-1tsbzs"]}>
+						<div className={styles["css-b74377"]}>
+							<p className={"chakra-text " + styles["css-cimxt8"]}>{data?.category}</p>
+							<h5 className={"chakra-heading " + styles["css-1j0nf7q"]}>{data?.title}</h5>
+							<p className={"chakra-text " + styles["css-1m942b8"]}>
+								<img className={"chakra-icon " + styles["css-mblvt0"]} alt="BR" width="24" height="24"
 										 src={data?.locationFlag} />{data?.location}</p>
 						</div>
 					</div>
-					<div className="css-zwhd7k"><button type="button" className="chakra-button css-mwecow" role="button">Support now</button></div>
+					<div className={styles["css-zwhd7k"]}>
+						<button type="button" className={"chakra-button " + styles["css-mwecow"]} role="button">Support now</button>
+					</div>
 				</div>
 			</div>
 		</div>

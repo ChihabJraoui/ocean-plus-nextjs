@@ -1,0 +1,261 @@
+.css-knybk {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	position: relative;
+	min-height: 446px;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 48em) {
+	.css-knybk {
+		min-height: 300px;
+	}
+}
+
+.css-qwl8h7 {
+	padding: var(--banyan-space-6);
+	position: relative;
+	z-index: 1;
+	margin-top: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(35px);
+	backdrop-filter: blur(35px);
+}
+
+.css-wh3fb4 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+}
+
+@media screen and (min-width: 48em) {
+	.css-wh3fb4 {
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		text-align: left;
+	}
+}
+
+.css-1tsbzs {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-right: 0px;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	min-width: 225px;
+}
+
+@media screen and (min-width: 48em) {
+	.css-1tsbzs {
+		padding-right: var(--banyan-space-4);
+	}
+}
+
+.css-b74377 {
+	color: var(--banyan-colors-white);
+}
+
+.css-cimxt8 {
+	font-family: var(--banyan-fonts-secondary);
+	font-weight: var(--banyan-fontWeights-medium);
+	font-size: var(--banyan-fontSizes-body1);
+	text-align: center;
+	margin-bottom: var(--banyan-space-2);
+}
+
+@media screen and (min-width: 48em) {
+	.css-cimxt8 {
+		text-align: left;
+	}
+}
+
+.css-1j0nf7q {
+	font-family: Chromatic, sans-serif !important;
+	font-weight: var(--banyan-fontWeights-medium);
+	font-size: 24px;
+	color: var(--banyan-colors-white);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	line-height: 32px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin-bottom: var(--banyan-space-2);
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+@media screen and (min-width: 48em) {
+	.css-1j0nf7q {
+		font-size: 32px;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		-webkit-justify-content: flex-start;
+		justify-content: flex-start;
+	}
+}
+
+.css-1m942b8 {
+	font-family: var(--banyan-fonts-secondary);
+	font-weight: var(--banyan-fontWeights-medium);
+	font-size: var(--banyan-fontSizes-body1);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin-bottom: var(--banyan-space-2);
+}
+
+@media screen and (min-width: 48em) {
+	.css-1m942b8 {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		-webkit-justify-content: flex-start;
+		justify-content: flex-start;
+	}
+}
+
+.css-mblvt0 {
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	line-height: 1em;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	color: currentColor;
+	margin-right: var(--banyan-space-2);
+}
+
+.css-zwhd7k {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	margin-top: auto;
+}
+
+.css-mwecow {
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: relative;
+	white-space: nowrap;
+	vertical-align: middle;
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+	width: auto;
+	line-height: 1.2;
+	border-radius: var(--banyan-radii-full);
+	font-weight: 500;
+	transition-property: var(--banyan-transition-property-common);
+	transition-duration: var(--banyan-transition-duration-normal);
+	font-family: Matter Mono;
+	text-transform: uppercase;
+	letter-spacing: .8px;
+	height: var(--banyan-sizes-14);
+	min-width: var(--banyan-sizes-36);
+	font-size: 16px !important;
+	-webkit-padding-start: var(--banyan-space-2);
+	padding-inline-start: var(--banyan-space-2);
+	-webkit-padding-end: var(--banyan-space-2);
+	padding-inline-end: var(--banyan-space-2);
+	border: 2px solid;
+	border-color: var(--banyan-colors-gray-500);
+	color: var(--banyan-colors-gray-100);
+	background: var(--banyan-colors-white);
+	background-image: inherit;
+	-webkit-background-clip: inherit;
+	background-clip: inherit;
+	box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.1);
+	background-color: var(--banyan-colors-transparent);
+	margin-left: auto;
+}
+
+.css-mwecow:focus, .css-mwecow[data-focus] {
+	box-shadow: 0 0 0 4px rgba(192, 201, 201, 0.2);
+}
+
+.css-mwecow[disabled], .css-mwecow[aria-disabled=true], .css-mwecow[data-disabled] {
+	opacity: 0.4;
+	cursor: not-allowed;
+	box-shadow: var(--banyan-shadows-none);
+}
+
+.css-mwecow:hover, .css-mwecow[data-hover] {
+	background: var(--banyan-colors-white);
+	color: var(--banyan-colors-gray-700);
+	box-shadow: var(--banyan-shadows-none);
+}
+
+.css-mwecow:hover[disabled], .css-mwecow[data-hover][disabled], .css-mwecow:hover[aria-disabled=true], .css-mwecow[data-hover][aria-disabled=true], .css-mwecow:hover[data-disabled], .css-mwecow[data-hover][data-disabled] {
+	background: initial;
+}
+
+.css-mwecow:active, .css-mwecow[data-active] {
+	box-shadow: var(--banyan-shadows-inner);
+}
