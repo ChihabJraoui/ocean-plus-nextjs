@@ -11396,7 +11396,14 @@
 
 						constructor(t, e, i, r = !1) {
 							if (this.uid = t, e.height !== e.width) throw new RangeError("DEM tiles must be square");
-							if (i && "mapbox" !== i && "terrarium" !== i) return $(`"${i}" is not a valid encoding type. Valid types include "mapbox" and "terrarium".`);
+							if (i && "mapbox" !== i && "terrarium" !== i) return $(`"${i}"
+							is not a valid encoding type. Valid types include
+
+							"mapbox"
+							and
+
+							"terrarium"
+							.`);
 							this.stride = e.height;
 							const n = this.dim = e.height - 2, o = new Uint32Array(e.data.buffer);
 							if (this.pixels = new Uint8Array(e.data.buffer), this.floatView = new Float32Array(e.data.buffer), this.borderReady = r, this._modifiedForSources = {}, !r) {
@@ -13008,7 +13015,25 @@
 									C = k_(c, V, e, u, h, d, o, _, r), k = 4 * n.length;
 									const p = t.iconSizeData;
 									let f = null;
-									"source" === p.kind ? (f = [Cg * l.layout.get("icon-size").evaluate(x, {}, E)], f[0] > O_ && $(`${t.layerIds[0]}: Value for "icon-size" is >= ${R_}. Reduce your "icon-size".`)) : "composite" === p.kind && (f = [Cg * b.compositeIconSizes[0].evaluate(x, {}, E), Cg * b.compositeIconSizes[1].evaluate(x, {}, E)], (f[0] > O_ || f[1] > O_) && $(`${t.layerIds[0]}: Value for "icon-size" is >= ${R_}. Reduce your "icon-size".`)), t.addSymbols(t.icon, n, f, v, y, x, !1, i, e, M.lineStartIndex, M.lineLength, -1, T, E, S, A), N = t.icon.placedSymbolArray.length - 1, s && (B = 4 * s.length, t.addSymbols(t.icon, s, f, v, y, x, Gg.vertical, i, e, M.lineStartIndex, M.lineLength, -1, T, E, S, A), U = t.icon.placedSymbolArray.length - 1)
+									"source" === p.kind ? (f = [Cg * l.layout.get("icon-size").evaluate(x, {}, E)], f[0] > O_ && $(`${t.layerIds[0]}: Value for
+
+									"icon-size"
+									is
+
+									>=
+									${R_}. Reduce your
+
+									"icon-size"
+									.`)) : "composite" === p.kind && (f = [Cg * b.compositeIconSizes[0].evaluate(x, {}, E), Cg * b.compositeIconSizes[1].evaluate(x, {}, E)], (f[0] > O_ || f[1] > O_) && $(`${t.layerIds[0]}: Value for
+
+									"icon-size"
+									is
+
+									>=
+									${R_}. Reduce your
+
+									"icon-size"
+									.`)), t.addSymbols(t.icon, n, f, v, y, x, !1, i, e, M.lineStartIndex, M.lineLength, -1, T, E, S, A), N = t.icon.placedSymbolArray.length - 1, s && (B = 4 * s.length, t.addSymbols(t.icon, s, f, v, y, x, Gg.vertical, i, e, M.lineStartIndex, M.lineLength, -1, T, E, S, A), U = t.icon.placedSymbolArray.length - 1)
 								}
 								for (const r in n.horizontal) {
 									const o = n.horizontal[r];
@@ -13113,7 +13138,25 @@
 							return l
 						}(0, r, l, o, s, a, n, t.allowVerticalPlacement), x = t.textSizeData;
 						let b = null;
-						"source" === x.kind ? (b = [Cg * o.layout.get("text-size").evaluate(a, {}, g)], b[0] > O_ && $(`${t.layerIds[0]}: Value for "text-size" is >= ${R_}. Reduce your "text-size".`)) : "composite" === x.kind && (b = [Cg * f.compositeTextSizes[0].evaluate(a, {}, g), Cg * f.compositeTextSizes[1].evaluate(a, {}, g)], (b[0] > O_ || b[1] > O_) && $(`${t.layerIds[0]}: Value for "text-size" is >= ${R_}. Reduce your "text-size".`)), t.addSymbols(t.text, y, b, l, s, a, u, e, i, c.lineStartIndex, c.lineLength, p, m, g, _, !1);
+						"source" === x.kind ? (b = [Cg * o.layout.get("text-size").evaluate(a, {}, g)], b[0] > O_ && $(`${t.layerIds[0]}: Value for
+
+						"text-size"
+						is
+
+						>=
+						${R_}. Reduce your
+
+						"text-size"
+						.`)) : "composite" === x.kind && (b = [Cg * f.compositeTextSizes[0].evaluate(a, {}, g), Cg * f.compositeTextSizes[1].evaluate(a, {}, g)], (b[0] > O_ || b[1] > O_) && $(`${t.layerIds[0]}: Value for
+
+						"text-size"
+						is
+
+						>=
+						${R_}. Reduce your
+
+						"text-size"
+						.`)), t.addSymbols(t.text, y, b, l, s, a, u, e, i, c.lineStartIndex, c.lineLength, p, m, g, _, !1);
 						for (const e of h) d[e] = t.text.placedSymbolArray.length - 1;
 						return 4 * y.length
 					}
@@ -19839,7 +19882,21 @@
 									stretchY: t.stretchY,
 									content: t.content,
 									hasRenderCallback: Boolean(t.userImage && t.userImage.render)
-								} : $(`Image "${i}" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.`)
+								} : $(`Image
+
+								"${i}"
+								could not be loaded. Please make sure you have added the image with map.
+
+								addImage
+								(
+								)
+								or a
+
+								"sprite"
+								property in your style. You can provide missing images by listening for the
+
+								"styleimagemissing"
+								map event.`)
 							}
 							i(null, r)
 						}
@@ -20720,7 +20777,13 @@
 								if (this.extraShadowCaster && !h) continue;
 								if (!0 === this.isSymbolTile && !n) continue;
 								if (!1 === this.isSymbolTile && !l) continue;
-								1 === r.version && $(`Vector tile source "${this.source}" layer "${e}" does not use vector tile spec v2 and therefore may have some rendering errors.`);
+								1 === r.version && $(`Vector tile source
+
+								"${this.source}"
+								layer
+
+								"${e}"
+								does not use vector tile spec v2 and therefore may have some rendering errors.`);
 								const d = o.encode(e), p = [];
 								for (let t = 0; t < r.length; t++) {
 									const i = r.feature(t), n = s.getId(i, e);
@@ -23888,11 +23951,16 @@
 								this._previousUpdateTimestamp = this.enabled ? this._updateTimestamp : void 0, this._updateTimestamp = pe.now();
 								const s = t.terrain && t.terrain.scope, a = r.get("source"),
 									l = n ? this._mockSourceCache : t.getSourceCache(a, s);
-								if (!l) return void $(`Couldn't find terrain source "${a}".`);
+								if (!l) return void $(`Couldn
+
+								't find terrain source "${a}".`);
 								if (this.sourceCache = l, this._exaggeration = o ? this.calculateExaggeration(e) : r.get("exaggeration"), !e.projection.requiresDraping && o && 0 === this._exaggeration) return void this._disable();
 								this.enabled = !0;
 								const c = () => {
-									this.sourceCache.used && $(`Raster DEM source '${this.sourceCache.id}' is used both for terrain and as layer source.\nThis leads to lower resolution of hillshade. For full hillshade resolution but higher memory consumption, define another raster DEM source.`);
+									this.sourceCache.used && $(`Raster DEM source
+
+									'${this.sourceCache.id}'
+									is used both for terrain and as layer source. This leads to lower resolution of hillshade. For full hillshade resolution but higher memory consumption, define another raster DEM source.`);
 									const t = this.getScaledDemTileSize();
 									this.sourceCache.update(e, t, !0), this.resetTileLookupCache(this.sourceCache.id)
 								};
@@ -26676,7 +26744,10 @@
 							if ("light-beam" === t.renderPass && "batched-model" !== c.type) return;
 							if ("vector" === c.type || "geojson" === c.type) return function (t, e, i, r) {
 								const n = t.transform;
-								if ("mercator" !== n.projection.name) return void $(`Drawing 3D models for ${n.projection.name} projection is not yet implemented`);
+								if ("mercator" !== n.projection.name) return void $(`Drawing
+
+								3
+								D models for ${n.projection.name} projection is not yet implemented`);
 								const o = n.getFreeCameraOptions().position;
 								if (!t.modelManager) return;
 								const s = t.modelManager, a = t.shadowRenderer;
@@ -26706,7 +26777,10 @@
 							if (!c.loaded()) return;
 							if ("batched-model" === c.type) return function (t, e, i, r) {
 								const n = t.context, o = t.transform, s = t.style.fog, a = t.shadowRenderer;
-								if ("mercator" !== o.projection.name) return void $(`Drawing 3D landmark models for ${o.projection.name} projection is not yet implemented`);
+								if ("mercator" !== o.projection.name) return void $(`Drawing
+
+								3
+								D landmark models for ${o.projection.name} projection is not yet implemented`);
 								const l = t.transform.getFreeCameraOptions().position,
 									c = nd.scale([], [l.x, l.y, l.z], t.transform.worldSize);
 								nd.negate(c, c);
@@ -28550,7 +28624,10 @@
 							if (e) {
 								const t = this._order.indexOf(e);
 								if (-1 === t) return void this.fire(new Pe(new Error(`Layer with id "${e}" does not exist on this map.`)));
-								n.slot === this._layers[e].slot ? o = t : $(`Layer with id "${e}" has a different slot. Layers can only be rearranged within the same slot.`)
+								n.slot === this._layers[e].slot ? o = t : $(`Layer with id
+
+								"${e}"
+								has a different slot. Layers can only be rearranged within the same slot.`)
 							}
 							this._order.splice(o, 0, r), this._layerOrderChanged = !0, this._layers[r] = n;
 							const s = this.getOwnLayerSourceCache(n),
@@ -28576,7 +28653,10 @@
 							if (e) {
 								const t = this._order.indexOf(e);
 								if (-1 === t) return void this.fire(new Pe(new Error(`Layer with id "${e}" does not exist on this map.`)));
-								i.slot === this._layers[e].slot ? n = t : $(`Layer with id "${e}" has a different slot. Layers can only be rearranged within the same slot.`)
+								i.slot === this._layers[e].slot ? n = t : $(`Layer with id
+
+								"${e}"
+								has a different slot. Layers can only be rearranged within the same slot.`)
 							}
 							this._order.splice(n, 0, t), this._changes.setDirty(), this._layerOrderChanged = !0, this.mergeLayers()
 						}
@@ -32002,7 +32082,7 @@
 									try {
 										this.style.setState(t) && this._update(!0)
 									} catch (i) {
-										$(`Unable to perform style diff: ${i.message || i.error || i}.  Rebuilding the style from scratch.`), this._updateStyle(t, e)
+										$(`Unable to perform style diff: ${i.message || i.error || i}. Rebuilding the style from scratch.`), this._updateStyle(t, e)
 									}
 								}
 
@@ -57968,7 +58048,13 @@
 		};
 		$(document).ready((function (t) {
 			var e;
-			document.body.classList.add("no-scroll"), Bt(), Tt(), window.addEventListener("resize", (function () {
+			setTimeout((function () {
+				var t = document.querySelector("#page-loader");
+				if (t) {
+				t.style.transition = "opacity 0.2s", t.style.opacity = "0", setTimeout((function () {
+					t.style.display = "none"
+				}), 200)}
+			}), 500), Bt(), Tt(), window.addEventListener("resize", (function () {
 				var t = document.querySelector("body");
 				t.classList.contains("resize-active") || t.classList.add("resize-active"), setTimeout((function () {
 					t.classList.remove("resize-active")
