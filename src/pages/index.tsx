@@ -206,7 +206,7 @@ export default function Home() {
 					<div className="row">
 						<div className="col-md-8 col-lg-offset-1 col-lg-7">
 							<div className="text-wrap">
-								<h2>Ocean Pulse's technology difference</h2>
+								<h2>Ocean Pulse&apos;s technology difference</h2>
 								<ul data-accordion="one" className="accordion">
 									<li className="first">
 										<a href="#" data-more className="h5 active">Originate a project</a>
@@ -298,7 +298,7 @@ export default function Home() {
 							<div className="txt-hold">
 								<div className="txt-top">
 									<blockquote>
-										<p className="check-quote">“We use Ocean Pulse's tools to see our carbon
+										<p className="check-quote">“We use Ocean Pulse&apos;s tools to see our carbon
 											impact — not just at the point of buying, but on an ongoing basis, year
 											after year.”</p>
 									</blockquote>

@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import {Head, Html, Main, NextScript} from "next/document";
 

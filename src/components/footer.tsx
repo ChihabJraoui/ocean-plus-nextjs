@@ -1,5 +1,4 @@
 import React from "react";
-import Script from "next/script";
 import Link from "next/link";
 
 export default function Footer () {
@@ -66,7 +65,7 @@ export default function Footer () {
 										<div className="subscribe-form-wrap">
 											<div className="form-intro">
 												<h3>Subscribe to our newsletter</h3>
-												<p>Stay updated with Ocean Pulse's news and guides, zero spam,
+												<p>Stay updated with Ocean Pulse&apos;s news and guides, zero spam,
 													promise.</p>
 											</div>
 										</div>

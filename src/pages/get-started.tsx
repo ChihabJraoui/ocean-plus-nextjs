@@ -27,7 +27,7 @@ export default function GetStartedPage() {
 									<a href="#" className="select-opener" data-select="" data-outside="" data-more="">Invest in nature</a>
 									<ul className="list" style={{display: "none"}}>
 										<li><a href="#" className="btn form1">Invest in nature</a></li>
-										<li><a href="https://portal.pachama.com/en/onboarding" target="_blank" className="btn form2"
+										<li><a href="https://portal.pachama.com/en/onboarding" target="_blank" rel="noreferrer" className="btn form2"
 													 data-link>Submit a carbon project</a></li>
 										<li><a href="#" className="btn form3">General inquires</a></li>
 									</ul>

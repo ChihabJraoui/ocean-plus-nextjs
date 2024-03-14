@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from "@app/components/layout";
-import Map from "@app/components/Map";
 import {useEffect, useState} from "react";
 import {brazilProject, defaultProjects, uaeProject, usaProject} from "@app/projects";
 import Project from "@app/components/Project";
 import "../../public/css/projectcss.css";
+import MapBox from "@app/components/Map";
 
 export default function Explore() {
 
-	const [projects, setProjects] = useState([]);
+	const [projects, setProjects] = useState<any[]>([]);
 
 	const handleSelect = (e) => {
 		const selectedOption = e.target.value;
@@ -113,7 +113,7 @@ export default function Explore() {
 					<div className="css-1wrwd7y">
 						<div className="[&amp;_.mapboxgl-ctrl-bottom-left]:d_none! css-t0ymut">
 							<div id="mapboxgl-map" style={{"position": "relative", "width": "950px", "height": "799px"}}>
-								<Map/>
+								<MapBox />
 							</div>
 						</div>
 					</div>
@@ -185,8 +185,7 @@ export default function Explore() {
 															</div>
 														</div>
 														<div className="css-zwhd7k">
-															<button type="button" className="chakra-button css-mwecow" role="button"
-																			fontcolor="gray.100">Support now
+															<button type="button" className="chakra-button css-mwecow" role="button">Support now
 															</button>
 														</div>
 													</div>

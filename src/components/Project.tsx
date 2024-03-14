@@ -58,7 +58,7 @@ export default function Project(props) {
 										 src={data?.locationFlag} />{data?.location}</p>
 						</div>
 					</div>
-					<div className="css-zwhd7k"><button type="button" className="chakra-button css-mwecow" role="button" fontcolor="gray.100">Support now</button></div>
+					<div className="css-zwhd7k"><button type="button" className="chakra-button css-mwecow" role="button">Support now</button></div>
 				</div>
 			</div>
 		</div>

@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
-import mapboxgl from "mapbox-gl";
+import mapboxgl, {Map} from "mapbox-gl";
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWVsbW91dGFraSIsImEiOiJjam8xdml4YmswZWtnM3FrdTlzbTI0bmxrIn0.aeG9mjRaPW2wnDRuhWix6Q';
 
-const markers = [
+const markers: any[] = [
 ];
 
 function createMarkerElement(title) {
@@ -13,12 +13,12 @@ function createMarkerElement(title) {
 	return element;
 }
 
-export default function Map() {
+export default function MapBox() {
 	const [loop, setLoop] = useState(true);
 	const [spin, setSpin] = useState(true);
-	const [interv, setInterv] = useState(null);
+	const [interv, setInterv] = useState<any>(null);
 
-	let map = null;
+	let map: Map;
 	const secondsPerRevolution = 50;
 
 	function spinGlobe() {
@@ -83,7 +83,9 @@ export default function Map() {
 
 		map = new mapboxgl.Map({
 			container: 'map',
-			projection: "globe",
+			projection: {
+				name: "globe"
+			},
 			style: "mapbox://styles/mapbox/satellite-v9",
 			center: [-98, 38.88],
 			zoom: 0.9,

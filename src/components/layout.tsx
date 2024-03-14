@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Header from "@app/components/header";
 import Footer from "@app/components/footer";
 import Script from "next/script";
@@ -131,7 +131,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 							<div className="col-r">
 								<div className="contact-us-form">
 									<div className="header">
-										<h6>Explore how Ocean Pulse's project evaluation reports provide tech-enabled
+										<h6>Explore how Ocean Pulse&apos;s project evaluation reports provide tech-enabled
 											insights to evaluate project quality.</h6>
 										<p></p>
 									</div>
@@ -177,8 +177,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 							<div className="col-r">
 								<div className="contact-us-form">
 									<div className="header">
-										<h6>Explore how Ocean Pulse's Carbon Monitoring product can give you ongoing
-											insight into your project's climate impact.</h6>
+										<h6>Explore how Ocean Pulse&apos;s Carbon Monitoring product can give you ongoing
+											insight into your project&apos;s climate impact.</h6>
 										<p></p>
 									</div>
 								</div>
