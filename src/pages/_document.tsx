@@ -10,26 +10,25 @@ export const metadata: Metadata = {
 export default function Document() {
   return (
     <Html lang="en">
-		<Head>
-			<meta charSet="utf-8"/>
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<title>Ocean Pulse | Revitalize Ecosystems. Reduce Carbon Footprint</title>
-			<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
-			<link rel='dns-prefetch' href='../js.hsforms.net/index.html'/>
-			<link rel='dns-prefetch' href='../js.hs-scripts.com/index.html'/>
-			<link rel='stylesheet' id='base-theme-style-css'
-						href='/css/theme3717.css?id=1ff26c07751ffdbc930c' type='text/css'
-						media='all'/>
+			<Head>
+				<meta charSet="utf-8"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+				<title>Ocean Pulse | Revitalize Ecosystems. Reduce Carbon Footprint</title>
+				<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
 
-			<script type="text/javascript" src="/js/jquery/jquery.minf43b.js?ver=3.7.1"
-							id="jquery-core-js"></script>
-			<script type="text/javascript" src="/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
-							id="jquery-migrate-js"></script>
-		</Head>
-		<body className="home">
-			<Main />
-			<NextScript />
-		</body>
+				<link rel="stylesheet" id="base-theme-style-css"
+							href="/css/theme3717.css" type="text/css"
+							media="all"/>
+
+				<script type="text/javascript" src="/js/jquery/jquery.minf43b.js?ver=3.7.1"
+								id="jquery-core-js"></script>
+				<script type="text/javascript" src="/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
+								id="jquery-migrate-js"></script>
+			</Head>
+			<body className="home">
+			<Main/>
+			<NextScript/>
+			</body>
 		</Html>
 	);
 }

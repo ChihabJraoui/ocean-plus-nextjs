@@ -723,12 +723,10 @@ export default function EnterprisePage() {
 										<span className="label">pachama originals</span>
 
 										<h2>Go beyond</h2>
-										<p>
 											<p>Today, there simply aren’t enough forest restoration and conservation projects to move at the
 												pace the planet demands. So now, we’re applying our technology every step of the way to create
 												the highest integrity, transparent and impactful forest carbon projects from the ground up.
 												Ocean Pulse Originals unlocks the next generation of nature-based projects.</p>
-										</p>
 										<ul className="btn-group">
 											<li>
 												<a href="#originals_general" className="btn  " data-modal>Contact our team</a>
@@ -753,9 +751,7 @@ export default function EnterprisePage() {
 						<div className="cta-background-dots-animation"></div>
 						<div className="cta-txt">
 							<h2>Build your nature strategy</h2>
-							<p>
 								<p>Chat with our experts to design a portfolio that meets your needs</p>
-							</p>
 							<ul className="btn-group">
 								<li>
 									<Link href="/get-started" className="btn">Get Started</Link>
@@ -780,11 +776,9 @@ export default function EnterprisePage() {
 									<div className="txt">
 										{/*<h1>Build a portfolio of the world’s best forest projects. </h1>*/}
 										<h2>Why forests are our most effective carbon removal technology</h2>
-										<p>
 											<p>Forests have been extracting and storing carbon dioxide from the atmosphere for millennia. Yet,
 												some argue if we’re to create a permanent solution to climate change, aren’t trees a stopgap
 												measure? To answer this question, we need to see the forest through the trees.</p>
-										</p>
 										<ul className="btn-group">
 											<li>
 												<a
