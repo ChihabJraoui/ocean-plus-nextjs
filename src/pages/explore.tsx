@@ -8,7 +8,7 @@ import "../../public/css/projectcss.css";
 
 export default function Explore() {
 
-	const [projects, setProjects] = useState<any[]>([]);
+	const [projects, setProjects] = useState([]);
 
 	const handleSelect = (e) => {
 		const selectedOption = e.target.value;
@@ -25,8 +25,8 @@ export default function Explore() {
 			case "india":
 				localStorage.setItem("country", "india");
 				break;
-			default:
-				localStorage.clear("country");
+			// default:
+			// 	localStorage.clear("country");
 		}
 		// location.reload();
 	}
@@ -37,10 +37,17 @@ export default function Explore() {
 			const country = localStorage.getItem("country");
 
 			switch (country) {
-				case "brazil": setProjects(brazilProject); break;
-				case "usa": setProjects(usaProject); break;
-				case "uae": setProjects(uaeProject); break;
-				default: setProjects(defaultProjects);
+				case "brazil":
+					setProjects(brazilProject);
+					break;
+				case "usa":
+					setProjects(usaProject);
+					break;
+				case "uae":
+					setProjects(uaeProject);
+					break;
+				default:
+					setProjects(defaultProjects);
 			}
 		}
 	}, []);
@@ -56,9 +63,10 @@ export default function Explore() {
 								<h6 className="font_Chromatic,_sans-serif! text_text.heavy h6 text_text.heavy font_heavy">Support
 									Pachama Projects</h6>
 								<p className="text_text.medium text_text.heavy font_body fs_14px">Pachama has evaluated over 150 forest
-									carbon projects across 14 countries to help you identify the highest quality projects. Here, you'll
+									carbon projects across 14 countries to help you identify the highest quality projects. Here,
+									you&apos;ll
 									find projects with credits currently available for purchase. Each project is carefully vetted by
-									Pachama's technology and forest scientists to make sure your investment reduces carbon, protects
+									Pachama&apos;s technology and forest scientists to make sure your investment reduces carbon, protects
 									wildlife and supports local communities.</p>
 							</div>
 							<div className="css-uqk96i">
@@ -94,7 +102,7 @@ export default function Explore() {
 								{projects?.map((item, i) => (
 									<li key={i} className="css-x5gdjb">
 										<a href="#">
-											<Project data={item} />
+											<Project data={item}/>
 										</a>
 									</li>
 								))}
@@ -105,7 +113,7 @@ export default function Explore() {
 					<div className="css-1wrwd7y">
 						<div className="[&amp;_.mapboxgl-ctrl-bottom-left]:d_none! css-t0ymut">
 							<div id="mapboxgl-map" style={{"position": "relative", "width": "950px", "height": "799px"}}>
-								<Map />
+								<Map/>
 							</div>
 						</div>
 					</div>
@@ -117,8 +125,7 @@ export default function Explore() {
 					<div className="container">
 						<div className="modal-box contact-us-content">
 							<a href="#" className="close">
-								<img width="16" alt=""
-										 className="lazyload" src="/images/icon-cross.svg"/>
+								<img width="16" alt="" className="lazyload" src="/images/icon-cross.svg"/>
 							</a>
 							<div className="col-r">
 								<div className="contact-us-form">
@@ -172,8 +179,7 @@ export default function Explore() {
 																<p className="chakra-text css-cimxt8">Avoided Unplanned Deforestation - REDD+</p>
 																<h5 className="chakra-heading css-1j0nf7q">Manoa</h5>
 																<p className="chakra-text css-1m942b8">
-																	<img className="chakra-icon css-mblvt0" alt="BR" width="24"
-																			 height="24"
+																	<img className="chakra-icon css-mblvt0" alt="BR" width="24" height="24"
 																			 src="https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/BR.svg"/> Brazil
 																	| Verra</p>
 															</div>
@@ -189,7 +195,7 @@ export default function Explore() {
 										</li>
 									</a>
 								</div>
-								<div className="success-msg" style={{ display: "none" }}>
+								<div className="success-msg" style={{display: "none"}}>
 									<p>Thank you for your interest in Pachama! Our team will follow up soon.</p>
 								</div>
 							</div>

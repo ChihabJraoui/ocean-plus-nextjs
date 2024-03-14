@@ -1,7 +1,8 @@
 {
 	"env": {
 		"browser": true,
-		"es2021": true
+		"es2021": true,
+		"jquery": true
 	},
 	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-hooks/recommended"],
 	"parserOptions": {
@@ -13,6 +14,6 @@
 	},
 	"plugins": ["react", "react-hooks"],
 	"rules": {
-		//add customize rules here as per your project's needs
+		"@typescript-eslint/no-explicit-any": "off"
 	}
 }

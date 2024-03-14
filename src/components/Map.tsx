@@ -16,7 +16,7 @@ function createMarkerElement(title) {
 export default function Map() {
 	const [loop, setLoop] = useState(true);
 	const [spin, setSpin] = useState(true);
-	const [interv, setInterv] = useState<any>(null);
+	const [interv, setInterv] = useState(null);
 
 	let map = null;
 	const secondsPerRevolution = 50;
