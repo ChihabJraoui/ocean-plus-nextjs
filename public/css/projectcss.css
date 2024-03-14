@@ -855,7 +855,8 @@ select::-ms-expand {
     -webkit-margin-end: 0px;
     margin-inline-end:0px;margin-bottom: 0px;
     -webkit-margin-start: var(--banyan-space-2);
-    margin-inline-start:var(--banyan-space-2);}
+    margin-inline-start:var(--banyan-space-2);
+}
 
     .css-a8iw49 {
         width: 50%;
@@ -1115,9 +1116,6 @@ select::-ms-expand {
     }
 
     .css-iwkjvg {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
         -webkit-box-flex: 1;
         -webkit-flex-grow: 1;
@@ -1504,17 +1502,17 @@ select::-ms-expand {
         }
     }
 
-    .css-x5gdjb {
-        border-radius: var(--banyan-radii-md);
-        background-color: var(--banyan-colors-white);
-        box-shadow: var(--banyan-shadows-md);
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        overflow: hidden;
-        transition: all 0.5s ease 0s;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom: var(--banyan-space-4);
-    }
+.css-x5gdjb {
+	border-radius: var(--banyan-radii-md);
+	background-color: var(--banyan-colors-white);
+	box-shadow: var(--banyan-shadows-md);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	overflow: hidden;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: var(--banyan-space-4);
+}
