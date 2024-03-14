@@ -26,7 +26,6 @@ const timelineBlockStyle4 = {
 
 export default function AboutPage() {
 	return (
-		<>
 		<Layout>
 			<section className="hero-home">
 				<div className="container">
@@ -1329,6 +1328,5 @@ export default function AboutPage() {
 				</div>
 			</section>
 		</Layout>
-		</>
 	);
 }
