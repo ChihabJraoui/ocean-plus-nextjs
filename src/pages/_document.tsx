@@ -19,6 +19,9 @@ export default function Document() {
 			<link rel='stylesheet' id='base-theme-style-css'
 						href='/css/theme3717.css?id=1ff26c07751ffdbc930c' type='text/css'
 						media='all'/>
+			<link rel="stylesheet" type="text/css" media="all"
+						href="/css/projectcss.css" />
+
 			<script type="text/javascript" src="/js/jquery/jquery.minf43b.js?ver=3.7.1"
 							id="jquery-core-js"></script>
 			<script type="text/javascript" src="/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
