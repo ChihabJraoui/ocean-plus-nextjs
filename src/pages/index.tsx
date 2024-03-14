@@ -1,11 +1,13 @@
-import Script from "next/script";
-import Layout from "@app/components/layout";
 import React from "react";
+import Layout from "@app/components/layout";
+import Link from "next/link";
+import LogoSlider from "@app/components/LogoSlider";
 
 const heroScrollSectionHeight = {"--section-height": "80vh"} as React.CSSProperties;
 export default function Home() {
 	return (
 		<Layout>
+
 			<section className="hero-home">
 				<div className="container">
 					<div className="row">
@@ -17,7 +19,7 @@ export default function Home() {
 								nature.</p>
 							<ul className="btn-group">
 								<li>
-									<a href="/enterprise" target="" className="btn  ">Invest in nature</a>
+									<Link href="/enterprise" target="" className="btn  ">Invest in nature</Link>
 								</li>
 								<li>
 									<a href="/partner" target="" className="btn btn-secondary">Start a
@@ -92,16 +94,11 @@ export default function Home() {
 												<img alt=""
 														 className="lazyload"
 														 src="/images/david-clode-ocrre9e1aro-unsplash-darker-tree-edit2-copy-2-65c395718f7ab-1600x737.jpg"/>
-												<noscript><img
-													src="/images/david-clode-ocrre9e1aro-unsplash-darker-tree-edit2-copy-2-65c395718f7ab-1600x737.jpg"
-													alt=""/></noscript>
 											</picture>
 											<div className="data-img">
 												<img alt=""
 														 className="lazyload"
 														 src="/images/carbon-graph.svg"/>
-												<noscript><img src="/images/carbon-graph.svg"
-																			 alt=""/></noscript>
 											</div>
 										</div>
 									</div>
@@ -113,16 +110,11 @@ export default function Home() {
 												<img alt=""
 														 className="lazyload"
 														 src="/images/kingfisher-no-branch-rainbow-copy3-1-65c5056640fa7.jpg"/>
-												<noscript><img
-													src="/images/kingfisher-no-branch-rainbow-copy3-1-65c5056640fa7.jpg"
-													alt=""/></noscript>
 											</picture>
 											<div className="data-img">
 												<img alt=""
 														 className="lazyload"
 														 src="/images/Frame-2147204995.svg"/>
-												<noscript><img src="/images/Frame-2147204995.svg"
-																			 alt=""/></noscript>
 											</div>
 										</div>
 									</div>
@@ -134,17 +126,11 @@ export default function Home() {
 												<img alt=""
 														 className="lazyload"
 														 src="/images/community2-2-65c505aa95e6b.jpg" />
-												<noscript><img
-													src="/images/community2-2-65c505aa95e6b.jpg"
-													alt=""/></noscript>
 											</picture>
 											<div className="data-img">
 												<img alt=""
 														 className="lazyload"
 														 src="/images/Frame-2147204995-1.svg" />
-												<noscript><img
-													src="/images/Frame-2147204995-1.svg"
-													alt=""/></noscript>
 											</div>
 										</div>
 									</div>
@@ -166,9 +152,6 @@ export default function Home() {
 											<img alt=""
 													 className="lazyload"
 													 src="/images/card-img03-1024x901-1-65c36cea3d594.jpg"/>
-											<noscript><img
-												src="/images/card-img03-1024x901-1-65c36cea3d594.jpg"
-												alt=""/></noscript>
 										</div>
 										<div className="card-content">
 											<span className="label">For companies</span>
@@ -190,9 +173,6 @@ export default function Home() {
 											<img alt=""
 													 className="lazyload"
 													 src="/images/card-img04-1024x901-1-65c36cea389b3.jpg" />
-											<noscript><img
-												src="/images/card-img04-1024x901-1-65c36cea389b3.jpg"
-												alt=""/></noscript>
 										</div>
 										<div className="card-content">
 											<span className="label">For project partners</span>
@@ -218,392 +198,7 @@ export default function Home() {
 				<div className="container">
 					<h2 className="lg">Leaders choosing Ocean Pulse</h2>
 				</div>
-				<div className="logo-slider">
-					<div className="logo-list ">
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt=""
-								className="lazyload"
-								src="/images/Bertelsmann_Logo_2016-1-300x55.png" />
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="107"
-								alt="" className="lazyload"
-								src="/images/Workday_logo.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" className="lazyload"
-								src="/images/Shopify-Black.svg" />
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" className="lazyload"
-								src="/images/MercadoLibre.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt=""
-								className="lazyload"
-								src="/images/Salesforce.com_logo.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt=""
-								className="lazyload"
-								src="/images/NESPRESSO_LOGO_BLACK.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								alt="" className="lazyload"
-								src="/images/Airbnb_Logo.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" className="lazyload"
-								src="/images/bcg.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt=""
-								className="lazyload"
-								src="/images/Duolingo_wordmark_gray_RGB.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" className="lazyload"
-								src="/images/Flexport.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt=""
-								className="lazyload"
-								src="/images/athletic-greens-vector-logo.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="100"
-								data-width-mb="60"
-								alt=""
-								className="lazyload"
-								src="/images/Church__Dwight_logo.svg"/>
-						</div>
-						<div className="logo">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" className="lazyload"
-								src="/images/vuori-1.svg"/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt=""
-								className="lazyload"
-								src="/images/Bertelsmann_Logo_2016-1-300x55.png"/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="107"
-								alt="" className="lazyload"
-								src="/images/Workday_logo.svg"/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" className="lazyload"
-								src="/images/Shopify-Black.svg"/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" data-src="/images/Salesforce.com_logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" data-src="/images/bcg.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Flexport.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/athletic-greens-vector-logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="100"
-								data-width-mb="60"
-								alt="" data-src="/images/Church__Dwight_logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" data-src="/images/vuori-1.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-					</div>
-					<div className="logo-list cloned">
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="107"
-								alt="" data-src="/images/Workday_logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Shopify-Black.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" data-src="/images/Salesforce.com_logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" data-src="/images/bcg.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Flexport.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/athletic-greens-vector-logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="100"
-								data-width-mb="60"
-								alt="" data-src="/images/Church__Dwight_logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" data-src="/images/vuori-1.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="wp-content/uploads/2024/02/Bertelsmann_Logo_2016-1-300x55.png"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="107"
-								alt="" data-src="/images/Workday_logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Shopify-Black.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" data-src="/images/MercadoLibre.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" data-src="/images/Salesforce.com_logo.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/NESPRESSO_LOGO_BLACK.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								alt="" data-src="/images/Airbnb_Logo.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="100"
-								alt="" data-src="/images/bcg.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Duolingo_wordmark_gray_RGB.svg"
-								className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt="" data-src="/images/Flexport.svg" className="lazyload"
-								src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="180"
-								data-width-mb="117"
-								alt=""
-								className="lazyload"
-								src="/images/athletic-greens-vector-logo.svg"/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="100"
-								data-width-mb="60"
-								alt=""
-								className="lazyload"
-								src="/images/Church__Dwight_logo.svg"/>
-						</div>
-						<div className="logo cloned">
-							<img
-								width="120"
-								data-width-mb="60"
-								alt="" className="lazyload"
-								src="/images/vuori-1.svg"/>
-						</div>
-					</div>
-				</div>
+				<LogoSlider />
 			</div>
 
 			<div className="accordion-section space-xxl">

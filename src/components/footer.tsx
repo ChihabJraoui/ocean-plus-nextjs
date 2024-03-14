@@ -1,4 +1,6 @@
+import React from "react";
 import Script from "next/script";
+import Link from "next/link";
 
 export default function Footer () {
 	return (
@@ -9,7 +11,7 @@ export default function Footer () {
 						<h2>Build your nature strategy with Ocean Pulse</h2>
 						<ul className="btn-group">
 							<li>
-								<a href="/get-started" target="" className="btn  ">Get Started</a>
+								<Link href="/get-started" target="" className="btn  ">Get Started</Link>
 							</li>
 						</ul>
 					</div>
@@ -18,11 +20,11 @@ export default function Footer () {
 						<div className="row">
 							<div className="col-lg-4">
 								<div className="footer-logo">
-									<a href="/">
+									<Link href="/">
 										<img alt="Ocean Pulse"
 												 className="attachment-large lazyload"
 												 src="/images/logo-white.svg"/>
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className="col-lg-12">
@@ -106,7 +108,7 @@ export default function Footer () {
 				</div>
 			</footer>
 
-			<Script>
+			{/*<Script>
 				{`window.addEventListener("load", function() {
 \t\t\t\t\t\t\t\t\t\t\t\tif (hbspt) {
 \t\t\t\t\t\t\t\t\t\t\t\tvar form_options = {
@@ -125,7 +127,7 @@ export default function Footer () {
 \t\t\t\t\t\t\t\t\t\t\t\thbspt.forms.create($.extend(true, form_options, {"portalId":"21158180","formId":"514e9b25-5907-43be-b309-2349ad71e64e","submitButtonClass":"btn btn-full","validationOptions":{"grouped":true,"inputEvent":"keyup","message":"<div\\/>","messageClass":"ui red pointing below label"}}));
 \t\t\t\t\t\t\t\t\t\t\t}
 \t\t\t\t\t\t\t\t\t\t\t});`}
-			</Script>
+			</Script>*/}
 		</>
 	);
 }

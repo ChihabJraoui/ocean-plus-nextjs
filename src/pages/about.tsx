@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "@app/components/layout";
 
 const logoSpeedStyle = {"--logo-speed": "42s"} as React.CSSProperties;

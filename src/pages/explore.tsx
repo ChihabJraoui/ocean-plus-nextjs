@@ -1,8 +1,10 @@
+import React from "react";
 import Layout from "@app/components/layout";
 import Map from "@app/components/Map";
 import {useEffect, useState} from "react";
 import {brazilProject, defaultProjects, uaeProject, usaProject} from "@app/projects";
 import Project from "@app/components/Project";
+import "../../public/css/projectcss.css";
 
 export default function Explore() {
 

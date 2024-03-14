@@ -1,3 +1,6 @@
+import React from "react";
+import Link from "next/link";
+
 export default function Header() {
 	return (
 		<header id="header">
@@ -8,8 +11,6 @@ export default function Header() {
 						<img alt="Ocean Pulse" width="162"
 								 className="attachment-large lazyload"
 								 src="/images/header-logo-pachama.svg" />
-						<noscript><img src="/images/header-logo-pachama.svg"
-													 className="attachment-large" alt="Ocean Pulse" width="162"/></noscript>
 					</a>
 				</div>
 
@@ -18,16 +19,16 @@ export default function Header() {
 				<div className="nav-panel">
 					<ul id="nav">
 						<li>
-							<a href="/enterprise" className="">Invest in nature</a>
+							<Link href="/enterprise">Invest in nature</Link>
 						</li>
 						<li>
-							<a href="/partner" className="">Develop a project</a>
+							<Link href="/partner" className="">Develop a project</Link>
 						</li>
 						<li>
-							<a href="/explore" className="">Explore projects</a>
+							<Link href="/explore" className="">Explore projects</Link>
 						</li>
 						<li>
-							<a href="/technology" className="">Resources</a>
+							<Link href="/technology" className="">Resources</Link>
 						</li>
 						<li className="dropdown-menu">
 							<a href="#" data-more className="dropdown-opener">About</a>
@@ -36,7 +37,7 @@ export default function Header() {
 									<a href="#" className="">Our mission<i className="icon-arrow"></i></a>
 								</li>
 								<li className="compact">
-									<a href="/technology" className="">Our tech<i className="icon-arrow"></i></a>
+									<Link href="/technology" className="">Our tech<i className="icon-arrow"></i></Link>
 								</li>
 								<li className="compact">
 									<a href="#" className="">Careers<i className="icon-arrow"></i></a>

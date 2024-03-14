@@ -1,15 +1,24 @@
+import React, {useEffect} from "react";
 import Header from "@app/components/header";
 import Footer from "@app/components/footer";
 import Script from "next/script";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+
+	// useEffect(() => {
+	// 	setTimeout((function () {
+	// 		var t = document.querySelector("#page-loader");
+	// 		t.style.transition = "opacity 0.2s", t.style.opacity = "0", setTimeout((function () {
+	// 			t.style.display = "none", document.body.classList.remove("no-scroll")
+	// 		}), 200)
+	// 	}), 500)
+	// }, []);
+
 	return (
 		<>
-			<div id="page-loader">
-				<img alt="Loading..." className="lazyload"
-						 src="/images/loader.gif" />
-				<noscript><img src="/images/loader.gif" alt="Loading..."/></noscript>
-			</div>
+			{/*<div id="page-loader">
+				<img src="/images/loader.gif" alt="Loading..." className="lazyload"/>
+			</div>*/}
 			<div id="wrapper">
 				<Header/>
 				<main>
@@ -23,36 +32,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					<div className="container">
 						<div className="modal-box contact-us-content">
 							<a href="#" className="close">
-								<img width="16" alt="" data-src="/images/icon-cross.svg"
+								<img width="16" alt=""
 										 className="lazyload"
-										 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img width="16" alt=""
-											 data-src="/images/icon-cross.svg"
-											 className="lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img width="16" alt=""
-												 data-src="/images/icon-cross.svg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript>
-											<img width="16" alt=""
-													 data-src="/images/icon-cross.svg"
-													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-											<noscript>
-												<img width="16" alt=""
-														 data-src="/images/icon-cross.svg"
-														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/icon-cross.svg"
-													width="16" alt=""/></noscript>
-											</noscript>
-										</noscript>
-									</noscript>
-								</noscript>
+										 src="/images/icon-cross.svg"/>
 							</a>
 							<div className="col-r">
 								<div className="contact-us-form">
@@ -63,7 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 											own project from the ground. Tell us a little about your needs below to be
 											directed to the appropriate team.</p>
 									</div>
-									<Script>
+									{/*<Script>
 										{`window.addEventListener("load", function() {
 \t\t\t\t\t\t\t\t\t\t\tif (hbspt) {
 \t\t\t\t\t\t\t\t\t\t\tvar form_options = {
@@ -82,7 +64,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 \t\t\t\t\t\t\t\t\t\t\thbspt.forms.create($.extend(true, form_options, {"portalId":"21158180","formId":"61215ce7-ce82-4260-ba97-3ef8c97c83b1","submitButtonClass":"btn btn-full","validationOptions":{"grouped":true,"inputEvent":"keyup","message":"<div\\/>","messageClass":"ui red pointing below label"}}));
 \t\t\t\t\t\t\t\t\t\t}
 \t\t\t\t\t\t\t\t\t\t});`}
-									</Script>
+									</Script>*/}
 								</div>
 								<div className="success-msg" style={{display: "none"}}>
 									<p>Thank you for your interest in Ocean Pulse! Our team will follow up soon.</p>
@@ -100,33 +82,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 								<img width="16" alt="" data-src="/images/icon-cross.svg"
 										 className="lazyload"
 										 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img width="16" alt=""
-											 data-src="/images/icon-cross.svg"
-											 className="lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img width="16" alt=""
-												 data-src="/images/icon-cross.svg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript>
-											<img width="16" alt=""
-													 data-src="/images/icon-cross.svg"
-													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-											<noscript>
-												<img width="16" alt=""
-														 data-src="/images/icon-cross.svg"
-														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/icon-cross.svg"
-													width="16" alt=""/></noscript>
-											</noscript>
-										</noscript>
-									</noscript>
-								</noscript>
 							</a>
 							<div className="col-r">
 								<div className="contact-us-form">
@@ -134,7 +89,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 										<h6>Contact Our Team</h6>
 										<p></p>
 									</div>
-									<Script>
+									{/*<Script>
 										{`window.addEventListener("load", function() {
 \t\t\t\t\t\t\t\t\t\t\tif (hbspt) {
 \t\t\t\t\t\t\t\t\t\t\tvar form_options = {
@@ -154,7 +109,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 \t\t\t\t\t\t\t\t\t\t}
 \t\t\t\t\t\t\t\t\t\t});`
 										}
-									</Script>
+									</Script>*/}
 								</div>
 								<div className="success-msg" style={{display: "none"}}>
 									<p>Thank you for your interest in Ocean Pulse! Our team will follow up soon.</p>
@@ -169,36 +124,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					<div className="container">
 						<div className="modal-box contact-us-content">
 							<a href="#" className="close">
-								<img width="16" alt="" data-src="/images/icon-cross.svg"
+								<img width="16" alt=""
 										 className="lazyload"
-										 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img width="16" alt=""
-											 data-src="/images/icon-cross.svg"
-											 className="lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img width="16" alt=""
-												 data-src="/images/icon-cross.svg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript>
-											<img width="16" alt=""
-													 data-src="/images/icon-cross.svg"
-													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-											<noscript>
-												<img width="16" alt=""
-														 data-src="/images/icon-cross.svg"
-														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/icon-cross.svg"
-													width="16" alt=""/></noscript>
-											</noscript>
-										</noscript>
-									</noscript>
-								</noscript>
+										 src="/images/icon-cross.svg"/>
 							</a>
 							<div className="col-r">
 								<div className="contact-us-form">
@@ -207,7 +135,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 											insights to evaluate project quality.</h6>
 										<p></p>
 									</div>
-									<Script>
+									{/*<Script>
 										{`window.addEventListener("load", function() {
 \t\t\t\t\t\t\t\t\t\t\tif (hbspt) {
 \t\t\t\t\t\t\t\t\t\t\tvar form_options = {
@@ -227,7 +155,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 \t\t\t\t\t\t\t\t\t\t}
 \t\t\t\t\t\t\t\t\t\t});`
 										}
-									</Script>
+									</Script>*/}
 								</div>
 								<div className="success-msg" style={{display: "none"}}>
 									<p>Thank you for your interest in Ocean Pulse! Our team will follow up soon.</p>
@@ -242,36 +170,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					<div className="container">
 						<div className="modal-box contact-us-content">
 							<a href="#" className="close">
-								<img width="16" alt="" data-src="/images/icon-cross.svg"
+								<img width="16" alt=""
 										 className="lazyload"
-										 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img width="16" alt=""
-											 data-src="/images/icon-cross.svg"
-											 className="lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img width="16" alt=""
-												 data-src="/images/icon-cross.svg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript>
-											<img width="16" alt=""
-													 data-src="/images/icon-cross.svg"
-													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-											<noscript>
-												<img width="16" alt=""
-														 data-src="/images/icon-cross.svg"
-														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/icon-cross.svg"
-													width="16" alt=""/></noscript>
-											</noscript>
-										</noscript>
-									</noscript>
-								</noscript>
+										 src="/images/icon-cross.svg"/>
 							</a>
 							<div className="col-r">
 								<div className="contact-us-form">
@@ -297,33 +198,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 								<img width="16" alt="" data-src="/images/icon-cross.svg"
 										 className="lazyload"
 										 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-								<noscript>
-									<img width="16" alt=""
-											 data-src="/images/icon-cross.svg"
-											 className="lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									<noscript>
-										<img width="16" alt=""
-												 data-src="/images/icon-cross.svg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-										<noscript>
-											<img width="16" alt=""
-													 data-src="/images/icon-cross.svg"
-													 className="lazyload"
-													 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-											<noscript>
-												<img width="16" alt=""
-														 data-src="/images/icon-cross.svg"
-														 className="lazyload"
-														 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-												<noscript><img
-													src="/images/icon-cross.svg"
-													width="16" alt=""/></noscript>
-											</noscript>
-										</noscript>
-									</noscript>
-								</noscript>
 							</a>
 							<div className="col-r">
 								<div className="contact-us-form">
