@@ -37,11 +37,10 @@ const imgStyle = {
 export default function Project(props) {
 
 	const { data } = props;
-
 	return (
 		<div className={styles["css-knybk"]}>
 			<span style={spanStyle}>
-				<img src={data?.image}
+				<img src="./images/faried-anzyari-5vcygqehv0k-unsplash-scaled-65c4c1ce7eae6-1600x900.jpg"
 						 decoding="async"
 						 data-nimg="fill"
 						 className="css-1nf0x2k"
@@ -52,11 +51,11 @@ export default function Project(props) {
 				<div className={styles["css-wh3fb4"]}>
 					<div className={styles["css-1tsbzs"]}>
 						<div className={styles["css-b74377"]}>
-							<p className={"chakra-text " + styles["css-cimxt8"]}>{data?.category}</p>
-							<h5 className={"chakra-heading " + styles["css-1j0nf7q"]}>{data?.title}</h5>
+							<p className={"chakra-text " + styles["css-cimxt8"]}></p>
+							<h5 className={"chakra-heading " + styles["css-1j0nf7q"]}></h5>
 							<p className={"chakra-text " + styles["css-1m942b8"]}>
 								<img className={"chakra-icon " + styles["css-mblvt0"]} alt="BR" width="24" height="24"
-										 src={data?.locationFlag} />{data?.location}</p>
+										 src={`https://cdn.jsdelivr.net/gh/umidbekk/react-flag-kit@1/assets/${data.country.Initials}.svg`} />{data.country.Name} | {data.name}</p>
 						</div>
 					</div>
 					<div className={styles["css-zwhd7k"]}>

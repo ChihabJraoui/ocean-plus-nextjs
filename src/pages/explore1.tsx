@@ -6,7 +6,7 @@ import Project from "@app/components/Project/Project";
 import * as styles from "../../public/css/explore.module.css";
 import MapBox from "@app/components/Map";
 
-export default function Explore() {
+export default function Explore1() {
 
 	const [projects, setProjects] = useState<any[]>([]);
 
