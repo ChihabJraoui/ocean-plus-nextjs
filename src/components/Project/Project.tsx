@@ -59,7 +59,7 @@ export default function Project(props) {
 						</div>
 					</div>
 					<div className={styles["css-zwhd7k"]}>
-						<button type="button" className={"chakra-button " + styles["css-mwecow"]} role="button">Support now</button>
+						<button type="button" className={"chakra-button " + styles["css-mwecow"]} role="button" onClick={() => window.location.href = "./wizard"}>Support now</button>
 					</div>
 				</div>
 			</div>

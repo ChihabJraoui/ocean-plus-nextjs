@@ -1,18 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import * as styles from "../../public/css/explore.module.css";
 
 export default function SelectComp(props: any) {
 	const data = props.data;
-	const [sharedData, setSharedData] = useState(props.sharedData);
 
 	const handleSelect = (event: any) => {
 		if (event.target.value === "all") {
-			setSharedData(data);
+			// setSharedData(data);
 			props.setSharedData(data);
 		} else {
-			setSharedData(
-				data.filter((item: any) => item.country.Initials === event.target.value)
-			);
+			// setSharedData(
+			// 	data.filter((item: any) => item.country.Initials === event.target.value)
+			// );
 			props.setSharedData(
 				data.filter((item: any) => item.country.Initials === event.target.value)
 			);

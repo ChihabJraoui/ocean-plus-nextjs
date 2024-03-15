@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-
+import React from 'react';
 import Image from "next/image";
 import Map, { Marker, MapRef } from "react-map-gl";
 import marker from "../assets/marker-editor.svg";
-import * as styles from "../../public/css/explore.module.css";
 
 export default function MapComp(props:any) {
 	//@ts-ignore
-	const [viewport, setViewport] = useState({
+	const viewport = ({
 		latitude: 28.6448,
 		longtitude: 77,
 		zoom: 0.5,
@@ -15,15 +14,12 @@ export default function MapComp(props:any) {
 		maxZoom: 1,
 	});
 	const map = useRef<MapRef>();
-	const [markers, setMarkers] = useState(props.data);
 	const [loop, setLoop] = useState(true);
 	const [spin, setSpin] = useState(true);
-	// @ts-ignore
-	var timeout: any;
 
 	useEffect(() => {
 		if (spin) {
-			timeout = setTimeout(() => {
+			setTimeout(() => {
 				spinGlobe();
 			}, 1000);
 		}

@@ -1,13 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 import { Layer, Map, MapRef, Source } from "react-map-gl";
 import type { FeatureCollection } from "geojson";
 import Layout from "@app/components/layout";
+import React from 'react';
 
-export default function overview() {
+export default function Overview() {
 	const mapRef: any = useRef<MapRef>(null);
 
 	// @ts-ignore
-	const [viewport, setViewport] = useState({
+	const viewport = ({
 		longitude: 39.15,
 		latitude: 21.44,
 		zoom: 2,
