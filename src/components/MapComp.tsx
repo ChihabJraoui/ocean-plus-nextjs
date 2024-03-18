@@ -73,7 +73,7 @@ export default function MapComp(props:any) {
 							key={index}
 							longitude={item.lng}
 							latitude={item.ltd}
-							onClick={() => (window.location.href = `./explore/overview`)}
+							onClick={() => (window.location.href = `./explore/${item.name}`)}
 							anchor="bottom"
 						>
 							<Image src={marker} alt="" />

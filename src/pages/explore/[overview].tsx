@@ -1,40 +1,45 @@
-import { useEffect, useRef} from "react";
+import { useEffect, useRef, useState } from "react";
 import { Layer, Map, MapRef, Source } from "react-map-gl";
-import type { FeatureCollection } from "geojson";
 import Layout from "@app/components/layout";
-import React from 'react';
+import React from "react";
+import { useRouter } from "next/router";
+import data from "../../data/Projects.json";
 
 export default function Overview() {
 	const mapRef: any = useRef<MapRef>(null);
+	const [coordinates, setCoordinates] = useState<any>(null);
+	const router = useRouter();
+	const { overview } = router.query;
+	var viewport:any = null;
+	var geojson: any;
+
+	if (overview && !coordinates) {
+		setCoordinates(data.filter((item) => item.name == overview));
+	}
 
 	// @ts-ignore
-	const viewport = ({
-		longitude: 39.15,
-		latitude: 21.44,
-		zoom: 2,
-		transitionDuration: 2000,
-	});
-	const geojson: FeatureCollection = {
-		type: "FeatureCollection",
-		features: [
-			// @ts-ignore
-			{
-				type: "Feature",
-				geometry: {
-					type: "Polygon",
-					coordinates: [
-						[
-							[39.18, 21.42],
-							[39.14, 21.42],
-							[39.13, 21.43],
-							[39.14, 21.46],
-							[39.18, 21.42],
-						],
-					],
+	if (coordinates) {
+		viewport = {
+			longitude: coordinates[0].lng,
+			latitude: coordinates[0].ltd,
+			zoom: 2,
+			transitionDuration: 2000,
+		};
+		geojson = {
+			type: "FeatureCollection",
+			features: [
+				// @ts-ignore
+				{
+					type: "Feature",
+					geometry: {
+						type: "Polygon",
+						coordinates: [coordinates[0].coordinates],
+					},
 				},
-			},
-		],
-	};
+			],
+		};
+	}
+
 	const layerStyle = {
 		id: "outline",
 		type: "line",
@@ -93,25 +98,27 @@ export default function Overview() {
 		}, 5000);
 	});
 
-	return (
-		<Layout>
-			<div id="wrapper">
-				<div className="overview" style={{width: "100%", height: "100vh"}}>
-					<Map
-						ref={mapRef}
-						initialViewState={viewport}
-						mapStyle="mapbox://styles/mapbox/satellite-v9"
-						mapboxAccessToken="pk.eyJ1IjoibWVsbW91dGFraSIsImEiOiJjam8xdml4YmswZWtnM3FrdTlzbTI0bmxrIn0.aeG9mjRaPW2wnDRuhWix6Q"
-						// @ts-ignore
-						projection="globe"
-					>
-						<Source id="my-data" type="geojson" data={geojson}>
-							{/* @ts-ignore */}
-							<Layer {...layerStyle} />
-						</Source>
-					</Map>
+	if (coordinates) {
+		return (
+			<Layout>
+				<div id="wrapper">
+					<div className="overview" style={{ width: "100%", height: "100vh" }}>
+						<Map
+							ref={mapRef}
+							initialViewState={viewport}
+							mapStyle="mapbox://styles/mapbox/satellite-v9"
+							mapboxAccessToken="pk.eyJ1IjoibWVsbW91dGFraSIsImEiOiJjam8xdml4YmswZWtnM3FrdTlzbTI0bmxrIn0.aeG9mjRaPW2wnDRuhWix6Q"
+							// @ts-ignore
+							projection="globe"
+						>
+							<Source id="my-data" type="geojson" data={geojson}>
+								{/* @ts-ignore */}
+								<Layer {...layerStyle} />
+							</Source>
+						</Map>
+					</div>
 				</div>
-			</div>
-		</Layout>
-	);
+			</Layout>
+		);
+	}
 }
