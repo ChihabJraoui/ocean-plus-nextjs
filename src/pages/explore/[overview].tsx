@@ -53,7 +53,7 @@ export default function Overview() {
 
 	var angle = 0;
 	function spinGlobe() {
-		angle += 0.5;
+		angle += 0.3;
 		mapRef.current?.setBearing(angle);
 	}
 	useEffect(() => {
@@ -91,11 +91,13 @@ export default function Overview() {
 	}, []);
 
 	useEffect(() => {
-		setTimeout(() => {
+		const timer = setTimeout(() => {
 			setInterval(() => {
 				spinGlobe();
 			}, 50);
 		}, 5000);
+
+		return () => clearTimeout(timer)
 	});
 
 	if (coordinates) {
