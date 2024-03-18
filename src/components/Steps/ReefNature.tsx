@@ -1,20 +1,19 @@
 import { useState } from "react";
-import data from "../../data/Projects.json";
 import React from 'react';
 
-export default function ReefNature({ nextStep, setCoordinates}: any) {
+export default function ReefNature({ nextStep, setCoordinates, data}: any) {
 
   const [disable, setDisable] = useState(true)
 
   const handleChange = (e: any) => {
     if(e.target.value === 'all')
     {
-      setCoordinates(data[0].reefNature)
+      setCoordinates(data)
       setDisable(true)
     }
     else
     {
-      setCoordinates(data[0].reefNature?.filter((item) => item.name == e.target.value))
+      setCoordinates(data.filter((item) => item.name == e.target.value))
       setDisable(false)
     }
   };

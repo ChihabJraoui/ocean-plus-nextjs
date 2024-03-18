@@ -3,14 +3,13 @@ import { Layer, Map, Source } from "react-map-gl";
 import ReefNature from "./Steps/ReefNature";
 import ReefLocation from "./Steps/ReefLocation";
 import AreaChoice from "./Steps/AreaChoice";
-import data from "../data/Projects.json";
 import DeployedChoice from "./Steps/DeployedChoice";
 import FormInfos from "./Steps/FormInfos";
 import React from 'react';
 
-export default function Wizard() {
+export default function Wizard(props) {
 	const [step, setStep] = useState(1);
-	const [coordinates, setCoordinates] = useState<any>(data[0].reefNature);
+	const [coordinates, setCoordinates] = useState<any>(props.data[0].reefNature);
 	const [area, setArea] = useState(100);
 	const [deployedChoice, setDeployedChoice] = useState("OSD");
 	const [test, setTest] = useState(0);
@@ -31,7 +30,7 @@ export default function Wizard() {
 		switch (step) {
 			case 1:
 				return (
-					<ReefNature nextStep={nextStep} setCoordinates={setCoordinates} />
+					<ReefNature nextStep={nextStep} setCoordinates={setCoordinates} data={props.data[0].reefNature}/>
 				);
 			case 2:
 				return (
@@ -145,8 +144,8 @@ export default function Wizard() {
 				<Map
 					mapboxAccessToken="pk.eyJ1IjoibWVsbW91dGFraSIsImEiOiJjam8xdml4YmswZWtnM3FrdTlzbTI0bmxrIn0.aeG9mjRaPW2wnDRuhWix6Q"
 					initialViewState={{
-						longitude: 39.15,
-						latitude: 21.44,
+						longitude: props.data[0].lng,
+						latitude: props.data[0].ltd,
 						zoom: 13,
 					}}
 					cursor="crosshair"
