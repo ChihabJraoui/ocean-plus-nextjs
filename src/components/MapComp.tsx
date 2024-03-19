@@ -1,18 +1,19 @@
-import { useEffect, useRef, useState } from "react";
-import React from 'react';
+import { useEffect, useMemo, useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Map, { Marker, MapRef } from "react-map-gl";
 import marker from "../assets/marker-editor.svg";
+import mapboxgl from "mapbox-gl";
 
-export default function MapComp(props:any) {
+export default function MapComp(props: any) {
 	//@ts-ignore
-	const viewport = ({
+	const viewport = {
 		latitude: 28.6448,
 		longtitude: 77,
 		zoom: 0.5,
 		bearing: 0,
 		maxZoom: 1,
-	});
+	};
 	const map = useRef<MapRef>();
 	const [loop, setLoop] = useState(true);
 	const [spin, setSpin] = useState(true);
@@ -24,10 +25,8 @@ export default function MapComp(props:any) {
 			}, 1000);
 		}
 		setTimeout(() => {
-			map.current?.on("dragend", () => {
-			});
-			map.current?.on("dragstart", () => {
-			});
+			map.current?.on("dragend", () => {});
+			map.current?.on("dragstart", () => {});
 			map.current?.on("mousemove", () => {
 				setSpin(false);
 			});
@@ -48,6 +47,7 @@ export default function MapComp(props:any) {
 		setLoop(!loop);
 	}
 
+
 	return (
 		<div
 			id="mapboxgl-map"
@@ -67,7 +67,7 @@ export default function MapComp(props:any) {
 				// @ts-ignore
 				ref={map}
 			>
-				{props.data.map((item:any, index:any) => {
+				{props.data.map((item: any, index: any) => {
 					return (
 						<Marker
 							key={index}
@@ -76,7 +76,7 @@ export default function MapComp(props:any) {
 							onClick={() => (window.location.href = `./explore/${item.name}`)}
 							anchor="bottom"
 						>
-							<Image src={marker} alt="" width={20} height={20}/>
+							<Image src={marker} alt="" width={20} height={20} />
 						</Marker>
 					);
 				})}
