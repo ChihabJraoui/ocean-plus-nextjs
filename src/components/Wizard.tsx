@@ -148,6 +148,7 @@ export default function Wizard(props) {
 						latitude: props.data[0].ltd,
 						zoom: 13,
 					}}
+					scrollZoom={false}
 					cursor="crosshair"
 					style={{ borderRadius: 20 }}
 					mapStyle="mapbox://styles/mapbox/satellite-v8"

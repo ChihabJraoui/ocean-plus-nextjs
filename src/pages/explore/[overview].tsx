@@ -108,6 +108,7 @@ export default function Overview() {
 						<Map
 							ref={mapRef}
 							initialViewState={viewport}
+							scrollZoom={false}
 							mapStyle="mapbox://styles/mapbox/satellite-v9"
 							mapboxAccessToken="pk.eyJ1IjoibWVsbW91dGFraSIsImEiOiJjam8xdml4YmswZWtnM3FrdTlzbTI0bmxrIn0.aeG9mjRaPW2wnDRuhWix6Q"
 							// @ts-ignore

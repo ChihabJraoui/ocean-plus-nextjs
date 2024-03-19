@@ -76,7 +76,7 @@ export default function MapComp(props:any) {
 							onClick={() => (window.location.href = `./explore/${item.name}`)}
 							anchor="bottom"
 						>
-							<Image src={marker} alt="" />
+							<Image src={marker} alt="" width={20} height={20}/>
 						</Marker>
 					);
 				})}

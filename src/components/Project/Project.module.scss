@@ -40,8 +40,8 @@
 	-ms-flex-align: center;
 	align-items: center;
 	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
@@ -148,6 +148,7 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 	margin-bottom: var(--banyan-space-2);
+	margin-left: 10px;
 }
 
 @media screen and (min-width: 48em) {
@@ -217,8 +218,8 @@
 	font-family: Matter Mono;
 	text-transform: uppercase;
 	letter-spacing: .8px;
-	height: var(--banyan-sizes-14);
-	min-width: var(--banyan-sizes-36);
+	height: var(--banyan-sizes-10);
+	min-width: var(--banyan-sizes-30);
 	font-size: 16px !important;
 	-webkit-padding-start: var(--banyan-space-2);
 	padding-inline-start: var(--banyan-space-2);
@@ -234,6 +235,7 @@
 	box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.1);
 	background-color: var(--banyan-colors-transparent);
 	margin-left: auto;
+	
 }
 
 .css-mwecow:focus, .css-mwecow[data-focus] {
