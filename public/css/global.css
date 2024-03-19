@@ -421,6 +421,10 @@ body {
 	line-height: var(--banyan-lineHeights-base);
 }
 
+.mapboxgl-popup-content{
+	background-color: #003C7E;
+}
+
 .form-button {
 	display: inline-block;
 	padding: 5px 10px;

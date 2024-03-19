@@ -3,7 +3,7 @@
     "name": "jeddah",
     "lng": 39.15,
     "ltd": 21.44,
-    "path": "project-jeddah",
+    "description": "project-jeddah",
     "country":{
       "Name": "Saudi Arabia",
       "Initials": "SA"
@@ -74,7 +74,7 @@
     "name": "washington",
     "lng": -118.43,
     "ltd": 33.90,
-    "path": "project-washington",
+    "description": "project-washington",
     "country":{
       "Name": "United State",
       "Initials": "US"

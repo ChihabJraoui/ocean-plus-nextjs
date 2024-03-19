@@ -1,9 +1,8 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import React from "react";
 import Image from "next/image";
 import Map, { Marker, MapRef } from "react-map-gl";
 import marker from "../assets/marker-editor.svg";
-import mapboxgl from "mapbox-gl";
 
 export default function MapComp(props: any) {
 	//@ts-ignore
@@ -17,6 +16,7 @@ export default function MapComp(props: any) {
 	const map = useRef<MapRef>();
 	const [loop, setLoop] = useState(true);
 	const [spin, setSpin] = useState(true);
+	const [hoveredMarkerIndex, setHoveredMarkerIndex] = useState(null);
 
 	useEffect(() => {
 		if (spin) {
@@ -47,7 +47,6 @@ export default function MapComp(props: any) {
 		setLoop(!loop);
 	}
 
-
 	return (
 		<div
 			id="mapboxgl-map"
@@ -76,7 +75,28 @@ export default function MapComp(props: any) {
 							onClick={() => (window.location.href = `./explore/${item.name}`)}
 							anchor="bottom"
 						>
-							<Image src={marker} alt="" width={20} height={20} />
+							<div>
+								<h6
+									className={`marker-${index}`}
+									style={{
+										position: "absolute",
+										top: "20px",
+										color: "white",
+										width: "content-fit",
+										display :index === hoveredMarkerIndex ? "" : "none",
+									}}
+								>
+									{item.description}
+								</h6>
+								<Image
+									src={marker}
+									alt=""
+									width={20}
+									height={20}
+									onMouseEnter={() => setHoveredMarkerIndex(index)}
+									onMouseLeave={() => setHoveredMarkerIndex(null)}
+								/>
+							</div>
 						</Marker>
 					);
 				})}
