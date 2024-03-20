@@ -36,8 +36,8 @@ export default function AreaChoice({ nextStep, prevStep, setArea, data}) {
       />
       
       <p id="output">Preserved Area: {value} m²</p>
-      <button onClick={prevStep} className="form-button">Previous</button>
-      <button onClick={nextStep} className="form-button">next</button>
+      <button onClick={prevStep} id="button-previous"     className="form-button">Previous</button>
+      <button onClick={nextStep} id="button-next" className="form-button">next</button>
     </div>
   );
 }

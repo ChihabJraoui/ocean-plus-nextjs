@@ -9,8 +9,8 @@ export default function ReefLocation({ nextStep, prevStep, area }) {
       <p>{area[0].name} area </p>
       <p>{area[0].details}</p>
       <p>{area[0].SC}</p>
-      <button onClick={prevStep} className="form-button">Previous</button>
-      <button onClick={nextStep} className="form-button">Next</button>
+      <button onClick={prevStep} id="button-previous"     className="form-button">Previous</button>
+      <button onClick={nextStep} id="button-next" className="form-button">Next</button>
     </div>
   );
 }

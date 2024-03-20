@@ -78,7 +78,7 @@ export default function FormInfos({prevStep}) {
       <br />
       <button type="submit" className="form-button">Submit</button>
     </form>
-    <button onClick={prevStep} className="form-button">Previous</button>
+    <button onClick={prevStep} id="button-previous" className="form-button">Previous</button>
     </div>
   );
 }

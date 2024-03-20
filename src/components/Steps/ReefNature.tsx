@@ -27,7 +27,7 @@ export default function ReefNature({ nextStep, setCoordinates, data}: any) {
         <option value="rich">Rich (Platinium)</option>
         <option value="special">Special (Gold label)</option>
       </select>
-      <button onClick={nextStep} disabled={disable} className="form-button">Next</button>
+      <button onClick={nextStep} disabled={disable} id="button-next" className="form-button">Next</button>
     </div>
   );
 }

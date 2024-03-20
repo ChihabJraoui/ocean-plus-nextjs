@@ -5,7 +5,8 @@ import ReefLocation from "./Steps/ReefLocation";
 import AreaChoice from "./Steps/AreaChoice";
 import DeployedChoice from "./Steps/DeployedChoice";
 import FormInfos from "./Steps/FormInfos";
-import React from 'react';
+import React from "react";
+import $ from 'jquery';
 
 export default function Wizard(props) {
 	const [step, setStep] = useState(1);
@@ -15,7 +16,7 @@ export default function Wizard(props) {
 	const [test, setTest] = useState(0);
 	const [test1, setTest1] = useState(0);
 
-	String(deployedChoice)
+	String(deployedChoice);
 
 	const nextStep = () => {
 		setStep(step + 1);
@@ -30,7 +31,11 @@ export default function Wizard(props) {
 		switch (step) {
 			case 1:
 				return (
-					<ReefNature nextStep={nextStep} setCoordinates={setCoordinates} data={props.data[0].reefNature}/>
+					<ReefNature
+						nextStep={nextStep}
+						setCoordinates={setCoordinates}
+						data={props.data[0].reefNature}
+					/>
 				);
 			case 2:
 				return (
@@ -71,20 +76,39 @@ export default function Wizard(props) {
 					/>
 				);
 			case 5:
-				return (
-					<FormInfos
-						prevStep={prevStep}
-					/>
-				);
+				return <FormInfos prevStep={prevStep} />;
 			default:
 				return null;
 		}
 	};
 
+	function handleWizardSteps()
+	{
+		$("#button-next").click(function(){
+			if($(".step-wrapper li:last-child").hasClass('completed')){
+			  alert("completed");
+			   return
+			}
+			  $(".step-wrapper li.active").addClass("completed").removeClass("active").next('li').addClass("active");  
+		  });
+		  
+		  $("#button-previous").click(function(){
+			if($(".step-wrapper li:first-child").hasClass('active')){
+			  alert("Already on first step");
+			   return
+			}
+			  $(".step-wrapper li.active").removeClass("active completed").prev('li').addClass("active").removeClass('completed');
+			if($(".step-wrapper li:last-child").hasClass('completed')){
+			  $(".step-wrapper li:last-child").removeClass('completed').addClass('active')
+			}
+		  });
+	}
+
 	useEffect(() => {
 		setTest(coordinates[0].coordinates[0][1]);
 		setTest1(coordinates[0].coordinates[1][1]);
-	}, []);
+		handleWizardSteps()
+	}, [step]);
 
 	const fillColor = [255, 0, 0, 100];
 	const handleMapClick = (e: any) => {
@@ -117,7 +141,6 @@ export default function Wizard(props) {
 				flexDirection: "row",
 				justifyContent: "space-around",
 				alignItems: "center",
-				backgroundColor: "beige",
 			}}
 		>
 			<div
@@ -128,7 +151,62 @@ export default function Wizard(props) {
 					alignItems: "center",
 				}}
 			>
-				<div>{renderStep()}</div>
+				<div className="wizard-container">
+					{/* form steps */}
+					<ul className="step-wrapper">
+						<li id="step-1" className="active">
+							<span>
+								<a>Step 1</a>
+							</span>
+							<a>
+								<svg className="icon icon-left">
+									<use xlinkHref="#icon-left"></use>
+								</svg>
+							</a>
+						</li>
+						<li id="step-2" className="">
+							<span>
+								<a>Step 2</a>
+							</span>
+							<a>
+								<svg className="step step-mid">
+									<use xlinkHref="#icon-mid"></use>
+								</svg>
+							</a>
+						</li>
+						<li id="step-3" className="">
+							<span>
+								<a>Step 3</a>
+							</span>
+							<a>
+								<svg className="step step-mid">
+									<use xlinkHref="#icon-mid"></use>
+								</svg>
+							</a>
+						</li>
+						<li id="step-4" className="">
+							<span>
+								<a>Step 4</a>
+							</span>
+							<a>
+								<svg className="step step-mid">
+									<use xlinkHref="#icon-mid"></use>
+								</svg>
+							</a>
+						</li>
+						<li id="step-5" className="">
+							<span>
+								<a>Step 5</a>
+							</span>
+							<a>
+								<svg className="step step-right">
+									<use xlinkHref="#icon-right"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					{renderStep()}
+				</div>
 			</div>
 			<div
 				className="map1"
