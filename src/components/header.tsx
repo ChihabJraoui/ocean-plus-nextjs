@@ -27,14 +27,14 @@ export default function Header() {
 						<li>
 							<Link href="/explore" className="">Explore projects</Link>
 						</li>
-						<li>
+						{/*<li>
 							<Link href="/technology" className="">Resources</Link>
-						</li>
+						</li>*/}
 						<li className="dropdown-menu">
 							<a href="#" data-more className="dropdown-opener">About</a>
 							<ul className="dropdown-content ">
 								<li className="compact">
-									<a href="#" className="">Our mission<i className="icon-arrow"></i></a>
+									<Link href="/about" className="">Our mission<i className="icon-arrow"></i></Link>
 								</li>
 								<li className="compact">
 									<Link href="/technology" className="">Our tech<i className="icon-arrow"></i></Link>

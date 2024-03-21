@@ -60,15 +60,6 @@ export default function AboutPage() {
 						<div className="swiper-slide">
 							<figure>
 								<div className="slide-img">
-									<img alt="copy-of-29062023-6c-0284-scaled-65c4d999ec6e9"
-											 className="attachment-medium_large lazyload"
-											 src="/images/copy-of-29062023-6c-0284-scaled-65c4d999ec6e9-768x512.webp"/>
-								</div>
-							</figure>
-						</div>
-						<div className="swiper-slide">
-							<figure>
-								<div className="slide-img">
 									<img alt="copy-of-dsc-0703-scaled-65c4d9c1d7e35"
 											 className="attachment-medium_large lazyload"
 											 src="/images/copy-of-dsc-0703-scaled-65c4d9c1d7e35-768x512.webp"/>
@@ -81,15 +72,6 @@ export default function AboutPage() {
 									<img alt="tim-schmidbauer-rzkc5jwsivu-unsplash-scaled-65c4d9e49140b"
 											 className="attachment-medium_large lazyload"
 											 src="/images/tim-schmidbauer-rzkc5jwsivu-unsplash-scaled-65c4d9e49140b-768x934.webp"/>
-								</div>
-							</figure>
-						</div>
-						<div className="swiper-slide">
-							<figure>
-								<div className="slide-img">
-									<img alt="dsc-2936-1-65c4da2b11f57"
-											 className="attachment-medium_large lazyload"
-											 src="/images/dsc-2936-1-65c4da2b11f57-768x512.webp"/>
 								</div>
 							</figure>
 						</div>
@@ -124,9 +106,8 @@ export default function AboutPage() {
 							<figure>
 								<div className="slide-img">
 									<img alt="copy-of-01072023-dji-0594-scaled-65c4dae0bffec"
-											 data-src="/images/copy-of-01072023-dji-0594-scaled-65c4dae0bffec-768x512.webp"
 											 className="attachment-medium_large lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+											 src="/images/copy-of-01072023-dji-0594-scaled-65c4dae0bffec-768x512.webp"/>
 								</div>
 							</figure>
 						</div>
@@ -134,9 +115,8 @@ export default function AboutPage() {
 							<figure>
 								<div className="slide-img">
 									<img alt="pexels-vietnam-photographer-17816484-scaled-65c4db163892f"
-											 data-src="/images/pexels-vietnam-photographer-17816484-scaled-65c4db163892f-768x952.webp"
 											 className="attachment-medium_large lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+											 src="/images/pexels-vietnam-photographer-17816484-scaled-65c4db163892f-768x952.webp"/>
 								</div>
 							</figure>
 						</div>
@@ -154,9 +134,8 @@ export default function AboutPage() {
 							<figure>
 								<div className="slide-img">
 									<img alt="copy-of-27062023-dji-0336-hdr-scaled-65c4db4a44c4f"
-											 data-src="/images/copy-of-27062023-dji-0336-hdr-scaled-65c4db4a44c4f-768x512.webp"
 											 className="attachment-medium_large lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+											 src="/images/copy-of-27062023-dji-0336-hdr-scaled-65c4db4a44c4f-768x512.webp"/>
 								</div>
 							</figure>
 						</div>
@@ -178,7 +157,7 @@ export default function AboutPage() {
 			</div>
 
 			<section className="hover-reveal-component" data-image="/images/heatmap-1600x900.webp"
-							 data-heatmap="/images/heatmap-1-min-1-65c6444a8d1b5.webp">
+							 data-heatmap="/images/heatmap-1-min-1-65c6444a8d1b5.jpg">
 				<div className="hover-reveal-component--waypoint"
 						 id="65db441544e3b-0"
 						 data-value="40K"

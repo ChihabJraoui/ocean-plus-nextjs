@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@app/components/layout";
+import styles from "../../public/sass/get-started.module.scss";
 
 export default function GetStartedPage() {
 	return (
@@ -9,10 +10,8 @@ export default function GetStartedPage() {
 					<div className="row">
 						<div className="col-md-10 col-lg-offset-1 col-lg-6">
 							<h1>Get started.</h1>
-							<p>
 								<p>We believe that with technology, we can unlock the full potential of natural systems to address
 									climate change and protect life on Earth.</p>
-							</p>
 						</div>
 					</div>
 				</div>
@@ -21,7 +20,7 @@ export default function GetStartedPage() {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-offset-1 col-lg-14">
-							<p>Choose how you’d like to get started:</p>
+							<p className={styles["filter-bar-text"]}>Choose how you’d like to get started:</p>
 							<div className="nav-row">
 								<nav className="filter-nav">
 									<a href="#" className="select-opener" data-select="" data-outside="" data-more="">Invest in nature</a>
@@ -46,11 +45,9 @@ export default function GetStartedPage() {
 									<div className="col-md-6 col-lg-6 col-lg-offset-1">
 										<h2>Invest in nature</h2>
 										<div className="txt">
-											<p>
 												<p>Our experts are here to help you invest in tech-verified projects or start your own project
 													from the ground. Tell us a little about your needs below to be directed to the appropriate
 													team.</p>
-											</p>
 										</div>
 									</div>
 									<div className="col-md-10 col-lg-8">
@@ -130,10 +127,8 @@ export default function GetStartedPage() {
 									<div className="col-md-6 col-lg-6 col-lg-offset-1">
 										<h2>General inquires</h2>
 										<div className="txt">
-											<p>
 												<p>Questions or requests for Pachama? Our team is here to help. Tell us a little about your
 													needs to be directed to the appropriate team.</p>
-											</p>
 										</div>
 									</div>
 									<div className="col-md-10 col-lg-8">
