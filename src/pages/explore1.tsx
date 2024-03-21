@@ -3,7 +3,7 @@ import Layout from "@app/components/layout";
 import {useEffect, useState} from "react";
 import {brazilProject, defaultProjects, uaeProject, usaProject} from "@app/projects";
 import Project from "@app/components/Project/Project";
-import * as styles from "../../public/css/explore.module.css";
+import * as styles from "../../public/sass/explore.module.scss";
 import MapBox from "@app/components/Map";
 
 export default function Explore1() {

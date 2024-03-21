@@ -220,7 +220,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 			{/*<script type="text/javascript" src="../js.hsforms.net/forms/current.js" id="base-theme-hsforms-js"></script>*/}
 			{/*<script type="text/javascript" id="hs-script-loader" async defer*/}
 			{/*				src="../js.hs-scripts.com/21158180.js"></script>*/}
-			<Script id="base-theme-script-js" src="/js/appa823.js?id=2c21442761bd58ede18e"/>
+			<Script id="base-theme-script-js" src="/js/appa823.js" />
 
 			{/*<Script>
 				{`

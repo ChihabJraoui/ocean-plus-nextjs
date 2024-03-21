@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "../../public/css/explore.module.css";
+import * as styles from "../../public/sass/explore.module.scss";
 
 export default function SelectComp(props: any) {
 	const data = props.data;

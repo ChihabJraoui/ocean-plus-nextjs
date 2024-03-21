@@ -1,11 +1,11 @@
+import React from 'react';
 import Layout from "@app/components/layout";
 import {useState} from "react";
 import Project from "@app/components/Project/Project";
 import data from "../../data/Projects.json";
 import MapComp from "@app/components/MapComp";
 import SelectComp from "@app/components/SelectComp";
-import * as styles from "../../../public/css/explore.module.css";
-import React from 'react';
+import styles from "../../../public/sass/explore.module.scss";
 
 export default function Explore() {
 	const [sharedData, setSharedData] = useState(data);
