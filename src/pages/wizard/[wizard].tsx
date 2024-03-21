@@ -20,9 +20,7 @@ export default function Explore() {
 	if (coordinates) {
 		return (
 			<Layout>
-				<div id="wrapper">
-					<Wizard data={coordinates}/>
-				</div>
+				<Wizard data={coordinates}/>
 			</Layout>
 		);
 	}

@@ -138,7 +138,6 @@ export default function Wizard(props) {
 				width: "100vw",
 				height: "100vh",
 				display: "flex",
-				flexDirection: "row",
 				justifyContent: "space-around",
 				alignItems: "center",
 			}}

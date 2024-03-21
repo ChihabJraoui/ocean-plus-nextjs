@@ -1,33 +1,52 @@
 import { useState } from "react";
 import React from 'react';
+import {Button} from "primereact/button";
+import {Dropdown} from "primereact/dropdown";
+
+const REEF_NATURE_OPTIONS = [
+	{ key: "all", label: "Select a location"},
+	{ key: "desert", label: "Desert"},
+	{ key: "normal", label: "Normal"},
+	{ key: "rich", label: "Rich (Platinium)"},
+	{ key: "special", label: "Special (Gold label)"},
+];
 
 export default function ReefNature({ nextStep, setCoordinates, data}: any) {
 
-  const [disable, setDisable] = useState(true)
+  const [selectedItem, setSelectedItem] = useState(REEF_NATURE_OPTIONS[0]);
+  const [disable, setDisable] = useState(true);
 
   const handleChange = (e: any) => {
-    if(e.target.value === 'all')
-    {
+
+		setSelectedItem(e);
+
+    if(e.key === 'all') {
       setCoordinates(data)
       setDisable(true)
-    }
-    else
-    {
-      setCoordinates(data.filter((item) => item.name == e.target.value))
+    } else {
+      setCoordinates(data.filter((item) => item.name == e.key))
       setDisable(false)
     }
   };
+
   return (
     <div>
-      <h2>Choose reef nature</h2>
-      <select className="select-input" id="projects" onChange={handleChange}>
-        <option value="all">Select a location</option>
-        <option value="desert">Desert</option>
-        <option value="normal">Normal</option>
-        <option value="rich">Rich (Platinium)</option>
-        <option value="special">Special (Gold label)</option>
-      </select>
-      <button onClick={nextStep} disabled={disable} id="button-next" className="form-button">Next</button>
+      <h3>Choose reef nature</h3>
+
+			<Dropdown id="projects"
+								value={selectedItem}
+								options={REEF_NATURE_OPTIONS}
+								onChange={(e) => handleChange(e.value)} />
+
+			<div className="flex justify-end mt-3">
+				<Button id="button-next"
+								label="Next"
+								icon="pi pi-chevron-right"
+								iconPos="right"
+								onClick={nextStep}
+								disabled={disable}
+								className="text-white" />
+			</div>
     </div>
   );
 }
