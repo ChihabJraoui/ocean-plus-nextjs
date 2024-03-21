@@ -20,7 +20,7 @@ export default function ReefNature({ nextStep, setCoordinates, data}: any) {
   return (
     <div>
       <h2>Choose reef nature</h2>
-      <select id="projects" onChange={handleChange}>
+      <select className="select-input" id="projects" onChange={handleChange}>
         <option value="all">Select a location</option>
         <option value="desert">Desert</option>
         <option value="normal">Normal</option>

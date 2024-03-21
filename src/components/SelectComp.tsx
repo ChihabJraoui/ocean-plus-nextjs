@@ -27,7 +27,7 @@ export default function SelectComp(props: any) {
 						<div className={styles["css-0"]}>
 							<div role="group" className="chakra-form-control css-1kxonj9">
 								<div className="chakra-input__group css-4302v8">
-									<select name="" id="select" onChange={handleSelect}>
+									<select name="" className="select-input" id="select" onChange={handleSelect}>
 										<option value="all">COUNTRIES</option>
 										{data.map((element: any, index: any) => {
 											return (

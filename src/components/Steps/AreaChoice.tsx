@@ -33,6 +33,7 @@ export default function AreaChoice({ nextStep, prevStep, setArea, data}) {
         onChange={handleChange}
         // @ts-ignore
         onInput={updateValue(value)}
+        className="range-input"
       />
       
       <p id="output">Preserved Area: {value} m²</p>
