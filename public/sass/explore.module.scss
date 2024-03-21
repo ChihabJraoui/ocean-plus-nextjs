@@ -25,23 +25,6 @@
 	width: 100%;
 }
 
-.css-1llqle4 {
-	display: none;
-	-webkit-box-flex: 1;
-	-webkit-flex-grow: 1;
-	-ms-flex-positive: 1;
-	flex-grow: 1;
-}
-
-@media screen and (min-width: 65.5rem) {
-	.css-1llqle4 {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-	}
-}
-
 .css-pwckxr {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -51,6 +34,7 @@
 	-webkit-flex-grow: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
+	padding-top: 2rem;
 	background: var(--banyan-colors-gray-100);
 	margin-left: 0px;
 	width: 100%;

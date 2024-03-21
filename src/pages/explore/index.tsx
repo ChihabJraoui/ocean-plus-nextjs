@@ -13,20 +13,19 @@ export default function Explore() {
 	return (
 		<Layout>
 			<div className={styles["css-1dhxv6h"]}>
-				<div className={styles["css-1llqle4"]}></div>
 				<div className={styles["css-pwckxr"]}>
 					<div className={styles["css-1smmmxx"]}>
 						<div className={styles["css-og8lvl"]}>
 							<div className="d_flex items_flex-start gap_10px flex_column pt_6 pb_2">
-								<h6 className="font_Chromatic,_sans-serif! text_text.heavy h6 text_text.heavy font_heavy">Support
+								<h6 className="font-bold text-2xl">Support
 									Pachama Projects</h6>
-								<p className="text_text.medium text_text.heavy font_body fs_14px">Pachama has evaluated over 150 forest
+								<p>Pachama has evaluated over 150 forest
 									carbon projects across 14 countries to help you identify the highest quality projects. Here,
-									you&apos;ll
-									find projects with credits currently available for purchase. Each project is carefully vetted by
+									you&apos;ll find projects with credits currently available for purchase. Each project is carefully vetted by
 									Pachama&apos;s technology and forest scientists to make sure your investment reduces carbon, protects
 									wildlife and supports local communities.</p>
 							</div>
+
 							<SelectComp sharedData={sharedData} setSharedData={setSharedData} data={data}/>
 
 							{/* Projects */}

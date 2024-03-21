@@ -418,7 +418,7 @@ export default function PartnerPage() {
 			<section className="world-map">
 				<img alt="world-map-65c3d931481bb"
 						 className="map background lazyload"
-						 src="/images/world-map-65c3d931481bb.png"/>
+						 src="/images/world-map-65c3d931481bb.webp"/>
 				<span className="country-label" style={{left: "45%", top: "30%"}}>
                <img alt="flag-usa" className="flag lazyload"
 										src="/images/flag-usa.jpg"/>
