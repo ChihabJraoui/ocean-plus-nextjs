@@ -1,0 +1,115 @@
+
+
+.select-container {
+	padding-bottom: var(--banyan-space-5);
+
+	.filter-by-label {
+		font-family: var(--banyan-fonts-secondary);
+		font-weight: 500;
+		font-size: 14px;
+		color: var(--banyan-colors-gray-900);
+		line-height: 24px;
+		padding-top: var(--banyan-space-2);
+		padding-bottom: var(--banyan-space-2);
+		margin-bottom: 0;
+	}
+
+
+
+	.select-input {
+		/* Reset */
+		appearance: none;
+		border: 0;
+		outline: 0;
+		font: inherit;
+		/* Personalize */
+		width: 20rem;
+		/* padding: 1rem 4rem 1rem 1rem; */
+		background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+		linear-gradient(to left, #007bff 3em, rgba(255, 255, 255, 0.2) 3em);
+		/* color: white; */
+		border-radius: 0.25em;
+		box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+		/* Remove IE arrow */
+		&::-ms-expand {
+			display: none;
+		}
+		/* Remove focus outline */
+		&:focus {
+			outline: none;
+		}
+		/* <option> colors */
+		option {
+			color: inherit;
+			background-color: var(--option-bg);
+		}
+	}
+}
+
+.css-6jfr73 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.css-6jfr73 > *:not(style) ~ *:not(style) {
+	margin-top: 0px;
+	-webkit-margin-end: 0px;
+	margin-inline-end: 0px;
+	margin-bottom: 0px;
+	-webkit-margin-start: var(--banyan-space-2);
+	margin-inline-start: var(--banyan-space-2);
+}
+
+.css-a8iw49 {
+	width: 50%;
+	max-width: 50%;
+}
+
+@media screen and (min-width: 48em) {
+	.css-a8iw49 {
+		width: 225px;
+		max-width: 225px;
+	}
+}
+
+.css-1vicip6 {
+	position: relative;
+}
+
+.css-1vicip6 input {
+	font-size: 16px;
+	color: var(--banyan-colors-gray-800);
+}
+
+.css-1vicip6 button {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.css-1kxonj9 {
+	width: 100%;
+	position: relative;
+}
+
+.css-4302v8 {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
