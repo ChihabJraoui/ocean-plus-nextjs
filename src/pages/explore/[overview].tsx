@@ -3,7 +3,7 @@ import { Layer, Map, MapRef, Source } from "react-map-gl";
 import Layout from "@app/components/layout";
 import React from "react";
 import { useRouter } from "next/router";
-import data from "../../data/Projects.json";
+import data from "../../data/projects.json";
 
 export default function Overview() {
 	const mapRef: any = useRef<MapRef>(null);
