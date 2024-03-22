@@ -1,12 +1,12 @@
 [
   {
-    "name": "jeddah",
+    "name": "Jeddah",
     "lng": 39.15,
     "ltd": 21.44,
     "description": "project-jeddah",
     "country":{
-      "Name": "Saudi Arabia",
-      "Initials": "SA"
+      "name": "Saudi Arabia",
+      "countryCode": "SA"
     },
     "coordinates": [
       [39.18, 21.42],
@@ -71,13 +71,13 @@
     ]
   },
   {
-    "name": "washington",
+    "name": "Washington",
     "lng": -118.43,
     "ltd": 33.90,
     "description": "project-washington",
     "country":{
-      "Name": "United State",
-      "Initials": "US"
+      "name": "United State",
+      "countryCode": "US"
     },
     "coordinates": [
       [-118.45, 33.86],
