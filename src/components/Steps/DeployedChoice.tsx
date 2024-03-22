@@ -1,22 +1,59 @@
 // @ts-ignore
-import React from 'react';
+import { Button } from "primereact/button";
+import { Dropdown } from "primereact/dropdown";
+import React, { useState } from "react";
 
-export default function DeployedChoice({nextStep, prevStep, setDeployedChoice}) {
+const DEPLOYEMENT_OPTIONS = [
+	{ key: "OSD", label: "OSD" },
+	{ key: "HAB", label: "HAB" },
+	{ key: "AR", label: "Artifical reef" },
+];
 
-  function handleChange(e:any) {
-    setDeployedChoice(e.target.value)
-  }
+export default function DeployedChoice({
+	nextStep,
+	prevStep,
+	setDeployedChoice,
+}) {
+	const [choice, setChoice] = useState(DEPLOYEMENT_OPTIONS[0]);
+	function handleChange(e: any) {
+		setDeployedChoice(e.target.value.key);
+    setChoice(e.target.value)
+	}
 
-  return (
-    <div>
-      <h2>Choose reef nature</h2>
-      <select className='select-input' id="deployement" onChange={handleChange}>
+	return (
+		<div>
+			<h2>Choose reef nature</h2>
+			{/* <select className='select-input' id="deployement" onChange={handleChange}>
         <option value="OSD">OSD</option>
         <option value="HAB">HAB</option>
         <option value="AR">Artifical reef</option>
-      </select>
-      <button onClick={prevStep} id="button-previous"     className="form-button">Previous</button>
-      <button onClick={nextStep} id="button-next" className="form-button">next</button>
-    </div>
-  );
+      </select> */}
+			<Dropdown
+				id="deployement"
+				value={choice}
+				options={DEPLOYEMENT_OPTIONS}
+				onChange={handleChange}
+			/>
+			<div className="flex justify-end mt-3">
+				<Button
+					id="button-previous"
+					label="Previous"
+					icon="pi pi-chevron-left"
+					iconPos="left"
+					onClick={prevStep}
+					className="text-white"
+					size="small"
+				/>
+				<Button
+					id="button-next"
+					label="Next"
+					icon="pi pi-chevron-right"
+					iconPos="right"
+					onClick={nextStep}
+					className="text-white"
+					size="small"
+				/>
+			</div>
+		</div>
+	);
 }

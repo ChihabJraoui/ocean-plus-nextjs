@@ -1,3 +1,4 @@
+import { Button } from "primereact/button";
 import  { useState } from "react";
 import React from 'react';
 
@@ -37,8 +38,24 @@ export default function AreaChoice({ nextStep, prevStep, setArea, data}) {
       />
       
       <p id="output">Preserved Area: {value} m²</p>
-      <button onClick={prevStep} id="button-previous"     className="form-button">Previous</button>
-      <button onClick={nextStep} id="button-next" className="form-button">next</button>
+      <Button
+					id="button-previous"
+					label="Previous"
+					icon="pi pi-chevron-left"
+					iconPos="left"
+					onClick={prevStep}
+					className="text-white"
+          size="small"
+				/>
+      <Button
+					id="button-next"
+					label="Next"
+					icon="pi pi-chevron-right"
+					iconPos="right"
+					onClick={nextStep}
+					className="text-white"
+          size="small"
+				/>
     </div>
   );
 }

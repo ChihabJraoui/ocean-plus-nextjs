@@ -14,7 +14,6 @@ export default function Explore() {
 	}
 
 	useEffect(() => {
-		// console.log(coordinates);
 	}, [coordinates]);
 
 	if (coordinates) {
