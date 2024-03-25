@@ -84,24 +84,28 @@ export default function FormInfos({ prevStep }) {
 					<label htmlFor="companyName">Company Name</label>
 				</span>
 				<br />
-				<Button
-					type="submit"
-					label="Submit"
-					icon="pi pi-send"
-					iconPos="left"
-					className="text-white"
-					size="small"
-				/>
+
+				<div className="flex justify-between">
+
+					<Button
+						id="button-previous"
+						label="Previous"
+						icon="pi pi-chevron-left"
+						iconPos="left"
+						onClick={prevStep}
+						className="text-white"
+						size="small"
+					/>
+					<Button
+						type="submit"
+						label="Submit"
+						icon="pi pi-send"
+						iconPos="left"
+						className="text-white"
+						size="small"
+					/>
+				</div>
 			</form>
-			<Button
-				id="button-previous"
-				label="Previous"
-				icon="pi pi-chevron-left"
-				iconPos="left"
-				onClick={prevStep}
-				className="text-white"
-				size="small"
-			/>
 		</div>
 	);
 }

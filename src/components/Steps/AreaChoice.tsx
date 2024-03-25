@@ -16,15 +16,16 @@ export default function AreaChoice({ nextStep, prevStep, setArea, data}) {
   function updateValue(value:any) {
     let output = document.getElementById('output');
     if (value < 1000000 && output) {
-      output.textContent = 'Preserved Area:' + value + ' m²';
+      output.textContent = 'Preserved Area: ' + value + 'm²';
     } else if (value >= 1000000 && output) {
-      output.textContent = 'Preserved Area:' + (value / 1000000).toFixed(2) + ' km²';
+      output.textContent = 'Preserved Area: ' + (value / 1000000).toFixed(2) + 'km²';
     }
   }
 
   return (
     <div>
-      <h2>Choose Area (m²)</h2>
+      <h3>Choose Area (m²)</h3>
+
       <input
         type="range"
         id="rangeInput"
@@ -34,28 +35,31 @@ export default function AreaChoice({ nextStep, prevStep, setArea, data}) {
         onChange={handleChange}
         // @ts-ignore
         onInput={updateValue(value)}
-        className="range-input"
+        className="range-input mb-3"
       />
       
-      <p id="output">Preserved Area: {value} m²</p>
-      <Button
+      <p id="output">Preserved Area:  {value}m²</p>
+
+			<div className="flex justify-between">
+				<Button
 					id="button-previous"
 					label="Previous"
 					icon="pi pi-chevron-left"
 					iconPos="left"
 					onClick={prevStep}
 					className="text-white"
-          size="small"
+					size="small"
 				/>
-      <Button
+				<Button
 					id="button-next"
 					label="Next"
 					icon="pi pi-chevron-right"
 					iconPos="right"
 					onClick={nextStep}
 					className="text-white"
-          size="small"
+					size="small"
 				/>
+			</div>
     </div>
   );
 }

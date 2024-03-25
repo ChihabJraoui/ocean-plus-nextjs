@@ -22,7 +22,7 @@ export default function DeployedChoice({
 
 	return (
 		<div>
-			<h2>Choose reef nature</h2>
+			<h3>Choose reef nature</h3>
 			{/* <select className='select-input' id="deployement" onChange={handleChange}>
         <option value="OSD">OSD</option>
         <option value="HAB">HAB</option>
@@ -34,7 +34,7 @@ export default function DeployedChoice({
 				options={DEPLOYEMENT_OPTIONS}
 				onChange={handleChange}
 			/>
-			<div className="flex justify-end mt-3">
+			<div className="flex justify-between mt-10">
 				<Button
 					id="button-previous"
 					label="Previous"

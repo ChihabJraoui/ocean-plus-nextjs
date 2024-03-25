@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import styles from "./Wizard.module.scss";
 import { Layer, Map, Source } from "react-map-gl";
-import ReefNature from "./Steps/ReefNature";
-import ReefLocation from "./Steps/ReefLocation";
-import AreaChoice from "./Steps/AreaChoice";
-import DeployedChoice from "./Steps/DeployedChoice";
-import FormInfos from "./Steps/FormInfos";
-import React from "react";
+import ReefNature from "../Steps/ReefNature";
+import ReefLocation from "../Steps/ReefLocation";
+import AreaChoice from "../Steps/AreaChoice";
+import DeployedChoice from "../Steps/DeployedChoice";
+import FormInfos from "../Steps/FormInfos";
 import $ from 'jquery';
 
 export default function Wizard(props) {
@@ -132,24 +132,8 @@ export default function Wizard(props) {
 	};
 
 	return (
-		<div
-			className="container1"
-			style={{
-				width: "100vw",
-				height: "100vh",
-				display: "flex",
-				justifyContent: "space-around",
-				alignItems: "center",
-			}}
-		>
-			<div
-				className="right-container"
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center",
-				}}
-			>
+		<div className={styles["container"]}>
+			<div className={styles["right-container"]}>
 				<div className="wizard-container">
 					{/* form steps */}
 					<ul className="step-wrapper">
