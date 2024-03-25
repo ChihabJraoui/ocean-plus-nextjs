@@ -2975,8 +2975,8 @@ body.nav-active {
 
 @media (min-width: 1024px) {
 	#nav > li > a:focus {
-		box-shadow: 0 0 0 1px #0e1625;
-		padding: 5px 10px;
+		/*box-shadow: 0 0 0 1px #0e1625;*/
+		/*padding: 5px 10px;*/
 	}
 }
 

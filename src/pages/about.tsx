@@ -124,9 +124,8 @@ export default function AboutPage() {
 							<figure>
 								<div className="slide-img">
 									<img alt="our-mission-carousel-7-65c9fb1eec26a"
-											 data-src="/images/our-mission-carousel-7-65c9fb1eec26a.webp"
 											 className="attachment-medium_large lazyload"
-											 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+											 src="/images/our-mission-carousel-7-65c9fb1eec26a.webp"/>
 								</div>
 							</figure>
 						</div>
@@ -157,7 +156,7 @@ export default function AboutPage() {
 			</div>
 
 			<section className="hover-reveal-component" data-image="/images/heatmap-1600x900.webp"
-							 data-heatmap="/images/heatmap-1-min-1-65c6444a8d1b5.jpg">
+							 data-heatmap="/images/heatmap-1-min-1-65c6444a8d1b5.webp">
 				<div className="hover-reveal-component--waypoint"
 						 id="65db441544e3b-0"
 						 data-value="40K"
@@ -171,7 +170,14 @@ export default function AboutPage() {
 					<div className="hover-reveal-component--waypoint--content">
 						<div className="hover-reveal-component--waypoint--left">
 							<div className="hover-reveal-component--waypoint--svg">
-								<img src="/images/circle.svg" alt=""/>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 viewBox="0 0 48 48" xmlSpace="preserve">
+	<path fill="none" stroke="#C0C9C9" strokeWidth="8" d="M44,24c0,5.5-2.2,10.5-5.9,14.1S29.5,44,24,44s-10.5-2.2-14.1-5.9
+                              S4,29.5,4,24S6.2,13.5,9.9,9.9S18.5,4,24,4s10.5,2.2,14.1,5.9S44,18.5,44,24z"/>
+									<path className="animation-radial-inner" strokeLinecap="round" fill="none" stroke="#6BA6FF"
+												strokeWidth="8" d="M44,24c0,5.5-2.2,10.5-5.9,14.1S29.5,44,24,44s-10.5-2.2-14.1-5.9
+                              S4,29.5,4,24S6.2,13.5,9.9,9.9S18.5,4,24,4s10.5,2.2,14.1,5.9S44,18.5,44,24z"/>
+	</svg>
 							</div>
 						</div>
 						<div className="hover-reveal-component--waypoint--right">
@@ -193,7 +199,21 @@ export default function AboutPage() {
 					<div className="hover-reveal-component--waypoint--content">
 						<div className="hover-reveal-component--waypoint--left">
 							<div className="hover-reveal-component--waypoint--svg">
-								<img src="/images/svg-curve-line.svg" alt=""/>
+								<svg xmlns="http://www.w3.org/2000/svg" width="48" height="43" viewBox="0 0 48 43" fill="none">
+									<path
+										d="M13.16 20.8001C6.00611 20.8001 3.008 35.1999 0 43H47.5V1C42.236 1 39.104 9.4 35.344 20.8001C31.584 32.2001 29.704 36.4 26.696 36.4C21.432 36.4 20.3139 20.8001 13.16 20.8001Z"
+										fill="url(#paint0_linear_463_9155)"/>
+									<path className="svg-curve-line"
+												d="M1 38.5C5 30.4231 7 20.8 13.16 20.8C19.32 20.8 21.432 36.4 26.696 36.4C29.704 36.4 31.584 32.2001 35.344 20.8C39.104 9.39998 41.736 1 47 1"
+												stroke="#84E1FF" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round"/>
+									<defs>
+										<linearGradient id="paint0_linear_463_9155" x1="24.0465" y1="-3.30769" x2="24.0465" y2="48.3846"
+																		gradientUnits="userSpaceOnUse">
+											<stop stopColor="#84E1FF"/>
+											<stop offset="0.847901" stopColor="#84E1FF" stopOpacity="0"/>
+										</linearGradient>
+									</defs>
+								</svg>
 							</div>
 						</div>
 						<div className="hover-reveal-component--waypoint--right">
@@ -215,7 +235,17 @@ export default function AboutPage() {
 					<div className="hover-reveal-component--waypoint--content">
 						<div className="hover-reveal-component--waypoint--left">
 							<div className="hover-reveal-component--waypoint--svg">
-								<img src="/images/svg-rings.svg" alt="" />
+								<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+									<path className="svg-rings-1"
+												d="M11.8061 41.5417C8.67849 39.5145 6.13159 36.7091 4.41526 33.4006C2.69894 30.0922 1.87215 26.3944 2.01602 22.6701C2.1599 18.9457 3.26948 15.3227 5.23592 12.1566C7.20236 8.9904 9.9581 6.38981 13.2328 4.60994C16.5075 2.83007 20.1886 1.93206 23.915 2.00401C27.6415 2.07596 31.2852 3.1154 34.4887 5.02035C37.6923 6.9253 40.3456 9.63033 42.1883 12.87C44.0311 16.1098 45 19.7729 45 23.5"
+												stroke="#F9E63F" strokeWidth="4" strokeLinecap="round"/>
+									<path className="svg-rings-2"
+												d="M20.1735 38.6388C17.3186 38.0115 14.6993 36.5897 12.6178 34.5376C10.5364 32.4854 9.07759 29.8865 8.40986 27.0408C7.74213 24.1952 7.89265 21.2186 8.84407 18.4548C9.79548 15.691 11.509 13.2526 13.7869 11.4209C16.0648 9.58917 18.8142 8.4389 21.7178 8.10281C24.6214 7.76671 27.5608 8.25849 30.1969 9.52139C32.833 10.7843 35.0582 12.7668 36.6159 15.2402C38.1735 17.7136 39 20.577 39 23.5"
+												stroke="#C0C9C9" strokeWidth="4" strokeLinecap="round"/>
+									<path className="svg-rings-3"
+												d="M16.7825 30.2177C15.6778 29.113 14.8626 27.7529 14.4091 26.2578C13.9556 24.7628 13.8778 23.179 14.1825 21.6467C14.4873 20.1144 15.1653 18.681 16.1564 17.4733C17.1475 16.2656 18.4212 15.321 19.8646 14.7232C21.308 14.1253 22.8765 13.8926 24.4313 14.0457C25.9861 14.1989 27.4791 14.7331 28.7781 15.6011C30.0771 16.469 31.142 17.644 31.8785 19.0218C32.6149 20.3996 33.0002 21.9378 33.0002 23.5001"
+												stroke="#6D7E7B" strokeWidth="4" strokeLinecap="round"/>
+								</svg>
 							</div>
 						</div>
 						<div className="hover-reveal-component--waypoint--right">
@@ -263,39 +293,39 @@ export default function AboutPage() {
 					<div className="hover-reveal-component--waypoint--content">
 						<div className="hover-reveal-component--waypoint--left">
 							<div className="hover-reveal-component--waypoint--svg">
-								{/*<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										 viewBox="0 0 47 47" xml:space="preserve">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 viewBox="0 0 47 47" xmlSpace="preserve">
                            <g className="svg-animation-segment">
                               <path fill="#6BA6FF" d="M47,23.5c0-4-1-7.9-2.9-11.3c-1.9-3.5-4.7-6.4-8-8.5l-5,7.9c2,1.3,3.7,3,4.8,5.1c1.1,2.1,1.7,4.4,1.7,6.8
                                  H47z"/>
-														 <circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" stroke-width="0.1"
-																		 stroke-miterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
+														 <circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" strokeWidth="0.1"
+																		 strokeMiterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
                            </g>
 									<g className="svg-animation-segment">
                               <path fill="#FF7324" d="M28.9,46.4c5.3-1.2,10-4.3,13.3-8.6c3.3-4.3,5-9.6,4.8-15l-9.4,0.3c0.1,3.3-0.9,6.4-2.9,9s-4.8,4.4-8,5.1
                                  L28.9,46.4z"/>
-										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" stroke-width="0.1"
-														stroke-miterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
+										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" strokeWidth="0.1"
+														strokeMiterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
                            </g>
 									<g className="svg-animation-segment">
                               <path fill="#EE88FF" d="M1.6,32c1.3,3.4,3.4,6.4,6,8.9c2.7,2.4,5.9,4.2,9.4,5.2c3.5,1,7.1,1.2,10.7,0.5c3.6-0.6,6.9-2.1,9.8-4.3
                                  l-5.6-7.5c-1.7,1.3-3.8,2.2-5.9,2.6c-2.1,0.4-4.3,0.3-6.4-0.3c-2.1-0.6-4-1.7-5.6-3.1c-1.6-1.5-2.8-3.3-3.6-5.3L1.6,32z"/>
-										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" stroke-width="0.1"
-														stroke-miterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
+										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" strokeWidth="0.1"
+														strokeMiterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
                            </g>
 									<g className="svg-animation-segment">
                               <path fill="#C0C9C9" d="M1.8,14.4c-1.2,2.8-1.8,5.9-1.8,9c0,3.1,0.6,6.1,1.8,9l8.7-3.6c-0.7-1.7-1.1-3.5-1.1-5.4
                                  c0-1.9,0.4-3.7,1.1-5.4L1.8,14.4z"/>
-										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" stroke-width="0.1"
-														stroke-miterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
+										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" strokeWidth="0.1"
+														strokeMiterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
                            </g>
 									<g className="svg-animation-segment">
                               <path fill="#6D7E7B" d="M36.1,3.7c-2.9-1.9-6.3-3.1-9.7-3.5c-3.5-0.4-7-0.1-10.3,1c-3.3,1.1-6.3,2.9-8.8,5.3s-4.5,5.4-5.7,8.6
                                  l8.8,3.3c0.7-2,1.9-3.7,3.4-5.2s3.3-2.5,5.3-3.2c2-0.7,4.1-0.9,6.2-0.6c2.1,0.3,4.1,1,5.8,2.1L36.1,3.7z"/>
-										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" stroke-width="0.1"
-														stroke-miterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
+										<circle opacity="1.000000e-02" fill="none" stroke="#FFFFFF" strokeWidth="0.1"
+														strokeMiterlimit="10" cx="23.5" cy="23.5" r="23.5"/>
                            </g>
-                        </svg>*/}
+                        </svg>
 							</div>
 						</div>
 						<div className="hover-reveal-component--waypoint--right">
@@ -317,15 +347,13 @@ export default function AboutPage() {
 						</div>
 						<div className="timeline-section--background timeline-section--media">
 							<img alt="copy-of-josh-withers-un-w3z4d0pw-unsplash-scaled-65c9fbba19dda"
-									 data-src="/images/copy-of-josh-withers-un-w3z4d0pw-unsplash-scaled-65c9fbba19dda.webp"
 									 className="attachment-full lazyload"
-									 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+									 src="/images/copy-of-josh-withers-un-w3z4d0pw-unsplash-scaled-65c9fbba19dda.webp"/>
 						</div>
 						<div className="timeline-section--background timeline-section--media">
 							<img alt="copy-of-qingbao-meng-01-igfr7hd4-unsplash-1-scaled-65c9f6bcd6450"
-									 data-src="/images/copy-of-qingbao-meng-01-igfr7hd4-unsplash-1-scaled-65c9f6bcd6450.webp"
 									 className="attachment-full lazyload"
-									 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+									 src="/images/copy-of-qingbao-meng-01-igfr7hd4-unsplash-1-scaled-65c9f6bcd6450.webp"/>
 						</div>
 					</div>
 				</div>
@@ -346,9 +374,8 @@ export default function AboutPage() {
 						 style={timelineBlockStyle2}>
 					<div className="img">
 						<img alt="copy-of-lingchor-ldy1k7rklea-unsplash-scaled-65c9fb8c37b75"
-								 data-src="/images/copy-of-lingchor-ldy1k7rklea-unsplash-scaled-65c9fb8c37b75-1600x1060.webp"
 								 className="attachment-large-1600 lazyload"
-								 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+								 src="/images/copy-of-lingchor-ldy1k7rklea-unsplash-scaled-65c9fb8c37b75-1600x1060.webp"/>
 					</div>
 					<div className="container">
 						<div className="step-content">
@@ -368,9 +395,8 @@ export default function AboutPage() {
 						 style={timelineBlockStyle3}>
 					<div className="img">
 						<img alt="copy-of-josh-withers-un-w3z4d0pw-unsplash-scaled-65c9fbba19dda"
-								 data-src="/images/copy-of-josh-withers-un-w3z4d0pw-unsplash-scaled-65c9fbba19dda-1600x1199.webp"
 								 className="attachment-large-1600 lazyload"
-								 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+								 src="/images/copy-of-josh-withers-un-w3z4d0pw-unsplash-scaled-65c9fbba19dda-1600x1199.webp"/>
 					</div>
 					<div className="container">
 						<div className="step-content">
@@ -393,9 +419,8 @@ export default function AboutPage() {
 						 style={timelineBlockStyle4}>
 					<div className="img">
 						<img alt="copy-of-qingbao-meng-01-igfr7hd4-unsplash-1-scaled-65c9f6bcd6450"
-								 data-src="/images/copy-of-qingbao-meng-01-igfr7hd4-unsplash-1-scaled-65c9f6bcd6450-1600x953.webp"
 								 className="attachment-large-1600 lazyload"
-								 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+								 src="/images/copy-of-qingbao-meng-01-igfr7hd4-unsplash-1-scaled-65c9f6bcd6450-1600x953.webp"/>
 					</div>
 					<div className="container">
 						<div className="step-content">
@@ -503,9 +528,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Renu Gupta"
-												 data-src="/images/Renu_Gupta-scaled-e1707362956409-768x768.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Renu_Gupta-scaled-e1707362956409-768x768.jpg" />
 									</div>
 									<strong className="name">Renu Gupta</strong>
 									<span className="role">SVP of Revenue</span>
@@ -513,9 +537,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Dick Cameron"
-												 data-src="/images/Dick_Cameron-scaled-1-768x512.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Dick_Cameron-scaled-1-768x512.jpg" />
 									</div>
 									<strong className="name">Dick Cameron</strong>
 									<span className="role">VP of Science</span>
@@ -523,9 +546,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Hannah Schlesinger"
-												 data-src="/images/Hannah-Schlesinger-scaled-1-e1706621886999-768x564.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Hannah-Schlesinger-scaled-1-e1706621886999-768x564.jpg" />
 									</div>
 									<strong className="name">Hannah Schlesinger</strong>
 									<span className="role">VP of Strategy and Operations</span>
@@ -542,8 +564,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Chrystal Henke Ball"
-												 data-src="/images/Chrystal-Henke-Ball-768x429.jpg" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 className="lazyload"
+												 src="/images/Chrystal-Henke-Ball-768x429.jpg" />
 									</div>
 									<strong className="name">Chrystal Henke Ball</strong>
 									<span className="role">VP of Engineering</span>
@@ -553,36 +575,35 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Carlos Silva"
-												 data-src="/images/Carlos_Silva-scaled-e1707363102139-768x768.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Carlos_Silva-scaled-e1707363102139-768x768.jpg" />
 									</div>
 									<strong className="name">Carlos Silva</strong>
 									<span className="role">Research & Development </span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Rachel Engstrand" data-src="/images/avatar-rachel.jpeg"
+										<img alt="Rachel Engstrand"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/avatar-rachel.jpg" />
 									</div>
 									<strong className="name">Rachel Engstrand</strong>
 									<span className="role">Applied Science</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Liang (Alan) Xu" data-src="/images/Liang-Alan-Xu-768x773.jpg"
+										<img alt="Liang (Alan) Xu"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Liang-Alan-Xu-768x773.jpg" />
 									</div>
 									<strong className="name">Liang (Alan) Xu</strong>
 									<span className="role">Remote Sensing</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Max Yancho" data-src="/images/Max_Yancho-scaled-1-768x512.jpg"
+										<img alt="Max Yancho"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Max_Yancho-scaled-1-768x512.jpg" />
 									</div>
 									<strong className="name">Max Yancho</strong>
 									<span className="role">Applied Science</span>
@@ -590,55 +611,46 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Chloe Papalazarou"
-												 data-src="/images/Chloe_Papalazarou-768x1024.jpeg" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 className="lazyload"
+												 src="/images/Chloe_Papalazarou-768x1024.jpg" />
 									</div>
 									<strong className="name">Chloe Papalazarou</strong>
 									<span className="role">Applied Science</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Will Merritt" data-src="/images/Will_Merritt-768x851.jpg"
+										<img alt="Will Merritt"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Will_Merritt-768x851.jpg" />
 									</div>
 									<strong className="name">Will Merritt</strong>
 									<span className="role">Applied Science</span>
 								</div>
 							</div>
-							<div className="member-list tabs " data-category="Project Operations">
+							<div className="member-list tabs" data-category="Project Operations">
 								<div className="member-card">
 									<div className="img">
-										<img alt="Gabe Chapin" data-src="/images/Gabe_Chapin-768x576.jpg"
+										<img alt="Gabe Chapin"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Gabe_Chapin-768x576.jpg" />
 									</div>
 									<strong className="name">Gabe Chapin</strong>
 									<span className="role">Carbon Project Operations</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Andrea Castillo" data-src="/images/andrea-1.jpeg"
+										<img alt="Andrea Castillo"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/andrea-1.jpg" />
 									</div>
 									<strong className="name">Andrea Castillo</strong>
 									<span className="role">Carbon Development</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Rodrigo Wanderley" data-src="/images/avatar-rodrigo.jpeg"
+										<img alt="Jo Jensen"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-									</div>
-									<strong className="name">Rodrigo Wanderley</strong>
-									<span className="role">Carbon Development</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Jo Jensen" data-src="/images/Jo_Jensen_2024-768x1024.jpg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Jo_Jensen_2024-768x1024.jpg" />
 									</div>
 									<strong className="name">Jo Jensen</strong>
 									<span className="role">Forest Science</span>
@@ -646,9 +658,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Hannah Schlesinger"
-												 data-src="/images/Hannah-Schlesinger-scaled-1-e1706621886999-768x564.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Hannah-Schlesinger-scaled-1-e1706621886999-768x564.jpg" />
 									</div>
 									<strong className="name">Hannah Schlesinger</strong>
 									<span className="role">VP of Strategy and Operations</span>
@@ -656,27 +667,26 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Leo Santiago"
-												 data-src="/images/Leo_Santiago-scaled-1-e1706622149712-768x623.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Leo_Santiago-scaled-1-e1706622149712-768x623.jpg" />
 									</div>
 									<strong className="name">Leo Santiago</strong>
 									<span className="role">Carbon Project Success</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Sophia Wood" data-src="/images/Sophia-Wood-768x501.jpg"
+										<img alt="Sophia Wood"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Sophia-Wood-768x501.jpg" />
 									</div>
 									<strong className="name">Sophia Wood</strong>
 									<span className="role">Carbon Project Success</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Catherine Charnov" data-src="/images/catherine-charnov.jpeg"
+										<img alt="Catherine Charnov"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/catherine-charnov.jpg" />
 									</div>
 									<strong className="name">Catherine Charnov</strong>
 									<span className="role">Carbon Development</span>
@@ -684,9 +694,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Natalie Urban"
-												 data-src="/images/Natalie_Urban-e1708069123452-768x504.png"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Natalie_Urban-e1708069123452-768x504.png" />
 									</div>
 									<strong className="name">Natalie Urban</strong>
 									<span className="role">Carbon Development</span>
@@ -695,54 +704,18 @@ export default function AboutPage() {
 							<div className="member-list tabs " data-category="AI and Software">
 								<div className="member-card">
 									<div className="img">
-										<img alt="Manisha Naidu" data-src="/images/Manisha-Naidu-1-768x1365.jpg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-									</div>
-									<strong className="name">Manisha Naidu</strong>
-									<span className="role">Engineering</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Heidi Hurst" data-src="/images/avatar-heidi.jpeg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-									</div>
-									<strong className="name">Heidi Hurst</strong>
-									<span className="role">Engineering</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Harley Alexander" data-src="/images/avatar-harley.jpeg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-									</div>
-									<strong className="name">Harley Alexander</strong>
-									<span className="role">Software</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Ailin Yu" data-src="/images/avatar-ailin-768x483.png"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-									</div>
-									<strong className="name">Ailin Yu</strong>
-									<span className="role">Engineering</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
 										<img alt="Jeffrey Seifried"
-												 data-src="/images/Jeffrey-Seifried-768x576.jpg" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 className="lazyload"
+												 src="/images/Jeffrey-Seifried-768x576.jpg" />
 									</div>
 									<strong className="name">Jeffrey Seifried</strong>
 									<span className="role">Engineering</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Marie Hoeger" data-src="/images/avatar-marie.jpeg"
+										<img alt="Marie Hoeger"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/avatar-marie.jpg" />
 									</div>
 									<strong className="name">Marie Hoeger</strong>
 									<span className="role">Engineering</span>
@@ -750,45 +723,44 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Dan Smith"
-												 data-src="/images/dan_smith_headshot-scaled-1-768x512.jpeg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/dan_smith_headshot-scaled-1-768x512.jpg" />
 									</div>
 									<strong className="name">Dan Smith</strong>
 									<span className="role">Engineering</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Katy Evans" data-src="/images/Katy_Evans-768x512.jpg"
+										<img alt="Katy Evans"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Katy_Evans-768x512.jpg" />
 									</div>
 									<strong className="name">Katy Evans</strong>
 									<span className="role">Director of Engineering</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Parker Irving" data-src="/images/avatar-parker.jpeg"
+										<img alt="Parker Irving"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/avatar-parker.jpg" />
 									</div>
 									<strong className="name">Parker Irving</strong>
 									<span className="role">Software</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Lindsey Nield" data-src="/images/Lindsey_Nield-768x512.jpeg"
+										<img alt="Lindsey Nield"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Lindsey_Nield-768x512.jpg" />
 									</div>
 									<strong className="name">Lindsey Nield</strong>
 									<span className="role">Machine Learning</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Andrew Campbell" data-src="/images/Andrew_Campbell-768x512.jpg"
+										<img alt="Andrew Campbell"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Andrew_Campbell-768x512.jpg" />
 									</div>
 									<strong className="name">Andrew Campbell</strong>
 									<span className="role">Software</span>
@@ -796,9 +768,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Kevin Mehlbrech"
-												 data-src="/images/Kevin_Mehlbrech-scaled-1-768x619.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Kevin_Mehlbrech-scaled-1-768x619.jpg" />
 									</div>
 									<strong className="name">Kevin Mehlbrech</strong>
 									<span className="role">Engineering</span>
@@ -807,9 +778,9 @@ export default function AboutPage() {
 							<div className="member-list tabs " data-category="Business">
 								<div className="member-card">
 									<div className="img">
-										<img alt="Tyler Johnson" data-src="/images/avatar-tyler.jpeg"
+										<img alt="Tyler Johnson"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/avatar-tyler.jpg" />
 									</div>
 									<strong className="name">Tyler Johnson</strong>
 									<span className="role">Revenue Operations</span>
@@ -817,63 +788,53 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Nick Harrison"
-												 data-src="/images/Nick-Harrison-headshot-scaled-1-e1706622192706-768x651.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Nick-Harrison-headshot-scaled-1-e1706622192706-768x651.jpg" />
 									</div>
 									<strong className="name">Nick Harrison</strong>
 									<span className="role">Sales</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Allison Handunge" data-src="/images/avatar-allison.jpeg"
+										<img alt="Rustom Birdie"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-									</div>
-									<strong className="name">Allison Handunge</strong>
-									<span className="role">Carbon Solutions</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Rustom Birdie" data-src="/images/Rustom_Birdie-768x512.jpg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Rustom_Birdie-768x512.jpg" />
 									</div>
 									<strong className="name">Rustom Birdie</strong>
 									<span className="role">Sales</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Kelly Rytel" data-src="/images/Kelly-Rytel-768x518.jpg"
+										<img alt="Kelly Rytel"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Kelly-Rytel-768x518.jpg" />
 									</div>
 									<strong className="name">Kelly Rytel</strong>
 									<span className="role">Carbon Solutions</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Michael Wang" data-src="/images/Home-Headshot-768x432.png"
+										<img alt="Michael Wang"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Home-Headshot-768x432.png" />
 									</div>
 									<strong className="name">Michael Wang</strong>
 									<span className="role">VP of Finance</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Jamie Durfee" data-src="/images/Jamie_Durfee-768x445.png"
+										<img alt="Jamie Durfee"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Jamie_Durfee-768x445.png" />
 									</div>
 									<strong className="name">Jamie Durfee</strong>
 									<span className="role">Recruiting</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Matt Beck" data-src="/images/Matt-Beck.jpg-768x824.jpg"
+										<img alt="Matt Beck"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Matt-Beck.jpg-768x824.jpg" />
 									</div>
 									<strong className="name">Matt Beck</strong>
 									<span className="role">Revenue Operations</span>
@@ -881,9 +842,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Anna Zapalowska"
-												 data-src="/images/Anna-Zap-Headshot-1-768x1024.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Anna-Zap-Headshot-1-768x1024.jpg" />
 									</div>
 									<strong className="name">Anna Zapalowska</strong>
 									<span className="role">Business Development</span>
@@ -892,35 +852,35 @@ export default function AboutPage() {
 							<div className="member-list tabs " data-category="Creatives">
 								<div className="member-card">
 									<div className="img">
-										<img alt="Alejandro Vizio" data-src="/images/Alejandro-Vizio-768x431.png"
+										<img alt="Alejandro Vizio"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Alejandro-Vizio-768x431.png" />
 									</div>
 									<strong className="name">Alejandro Vizio</strong>
 									<span className="role">Design</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Addie Johnson" data-src="/images/avatar-addie.jpeg"
+										<img alt="Addie Johnson"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/avatar-addie.jpg" />
 									</div>
 									<strong className="name">Addie Johnson</strong>
 									<span className="role">Marketing</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Adam Blau" data-src="/images/Adam_Blau.jpeg" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+										<img alt="Adam Blau" className="lazyload"
+												 src="/images/Adam_Blau.jpg" />
 									</div>
 									<strong className="name">Adam Blau</strong>
 									<span className="role">Product</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Andrea Sassenrath" data-src="/images/andrea.jpeg"
+										<img alt="Andrea Sassenrath"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/andrea.jpg" />
 									</div>
 									<strong className="name">Andrea Sassenrath</strong>
 									<span className="role">Product</span>
@@ -928,25 +888,24 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Felix Dorrek"
-												 data-src="/images/Felix_Dorrek_2-scaled-1-768x519.jpg"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/Felix_Dorrek_2-scaled-1-768x519.jpg" />
 									</div>
 									<strong className="name">Felix Dorrek</strong>
 									<span className="role">Product</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Cait Harding" data-src="/images/avatar-cait.jpeg"
+										<img alt="Cait Harding"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+												 src="/images/avatar-cait.jpg" />
 									</div>
 									<strong className="name">Cait Harding</strong>
 									<span className="role">Sr Director of Marketing</span>
 								</div>
 							</div>
 							<div className="btn-hold">
-								<a href="../#" className="btn">Join the team</a>
+								<Link href="/" className="btn">Join the team</Link>
 							</div>
 						</div>
 					</div>
@@ -1033,35 +992,35 @@ export default function AboutPage() {
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Ryan Graves" data-src="/images/Saltwater-Ryan-768x764.png"
+										<img alt="Ryan Graves"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Saltwater-Ryan-768x764.png"/>
 									</div>
 									<strong className="name">Ryan Graves</strong>
 									<span className="role">Co-Founder of Uber</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Laura Dern" data-src="/images/Laura-dern-bw-768x769.png"
+										<img alt="Laura Dern"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Laura-dern-bw-768x769.png"/>
 									</div>
 									<strong className="name">Laura Dern</strong>
 									<span className="role">Actress and Activist</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Paul Graham" data-src="/images/paul.jpeg" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+										<img alt="Paul Graham" className="lazyload"
+												 src="/images/paul.jpg"/>
 									</div>
 									<strong className="name">Paul Graham</strong>
 									<span className="role">Y Combinator Founder</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Portia De Rossi" data-src="/images/Portia-bw.png"
+										<img alt="Portia De Rossi"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Portia-bw.png"/>
 									</div>
 									<strong className="name">Portia De Rossi</strong>
 									<span className="role">Former Actress and Founder of General Public</span>
@@ -1069,18 +1028,17 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Tobi Lutke"
-												 data-src="/images/Tobi-lutke-1-e1707272375119-768x768.png"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Tobi-lutke-1-e1707272375119-768x768.png"/>
 									</div>
 									<strong className="name">Tobi Lutke</strong>
 									<span className="role">Shopify Founder</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Manu Ginobili" data-src="/images/Manu-1-768x432.jpeg"
+										<img alt="Manu Ginobili"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Manu-1-768x432.jpg"/>
 									</div>
 									<strong className="name">Manu Ginobili</strong>
 									<span className="role">Investor and Professional Basketball Player</span>
@@ -1088,26 +1046,25 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Alexis Ohanian"
-												 data-src="/images/alexis-ohanian600x600-1-768x768.png"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/alexis-ohanian600x600-1-768x768.png"/>
 									</div>
 									<strong className="name">Alexis Ohanian</strong>
 									<span className="role">776 Founder & Reddit Co-Founder</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Lenny Rachitsky" data-src="/images/Lenny-.jpeg"
+										<img alt="Lenny Rachitsky"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Lenny-.jpg"/>
 									</div>
 									<strong className="name">Lenny Rachitsky</strong>
 									<span className="role">Author and Thought Leader</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
-										<img alt="Azeem Azhar" data-src="/images/Azeem-1-1.png" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+										<img alt="Azeem Azhar" className="lazyload"
+												 src="/images/Azeem-1-1.png"/>
 									</div>
 									<strong className="name">Azeem Azhar</strong>
 									<span className="role">Exponential View Founder</span>
@@ -1115,9 +1072,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Joe Gebbia"
-												 data-src="/images/Joe-Gebbia-1-e1707274484958-768x768.png"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Joe-Gebbia-1-e1707274484958-768x768.png"/>
 									</div>
 									<strong className="name">Joe Gebbia</strong>
 									<span className="role">Airbnb Co-Founder</span>
@@ -1125,9 +1081,8 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Chris Sacca"
-												 data-src="/images/Chris-Sacca-1-e1707272526980-768x768.png"
 												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/Chris-Sacca-1-e1707272526980-768x768.png"/>
 									</div>
 									<strong className="name">Chris Sacca</strong>
 									<span className="role">Lowercase Founder</span>
@@ -1135,48 +1090,11 @@ export default function AboutPage() {
 								<div className="member-card">
 									<div className="img">
 										<img alt="Marcos Galperin"
-												 data-src="/images/Marcos-galperin-2-1-768x768.png" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 className="lazyload"
+												 src="/images/Marcos-galperin-2-1-768x768.png"/>
 									</div>
 									<strong className="name">Marcos Galperin</strong>
 									<span className="role">Mercado Libre Co-Founder</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Claire Hughes Johnson"
-												 data-src="/images/Claire-Hughes-Johnson-min.jpg" className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									</div>
-									<strong className="name">Claire Hughes Johnson</strong>
-									<span className="role">Stripe Corporate Officer and Advisor</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Seth Goldman" data-src="/images/Seth-Goldman-min.jpg"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									</div>
-									<strong className="name">Seth Goldman</strong>
-									<span className="role">Honest Tea Co-Founder</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Shana Fisher"
-												 data-src="/images/shanafisher-1-e1707272405914-768x768.png"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									</div>
-									<strong className="name">Shana Fisher</strong>
-									<span className="role">Third Kind Founder</span>
-								</div>
-								<div className="member-card">
-									<div className="img">
-										<img alt="Ram Shriram" data-src="/images/ram-shriram-1.png"
-												 className="lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-									</div>
-									<strong className="name">Ram Shriram</strong>
-									<span className="role">Founder of Sherpalo Ventures</span>
 								</div>
 								<div className="member-card">
 									<div className="img">
@@ -1214,7 +1132,7 @@ export default function AboutPage() {
 							<h2>Join the mission.Partner with Pachama.</h2>
 							<ul className="btn-group">
 								<li>
-									<Link href="/get-started" target="" className="btn  ">Contact Us</Link>
+									<Link href="/get-started" target="" className="btn">Contact Us</Link>
 								</li>
 							</ul>
 						</div>
@@ -1241,9 +1159,8 @@ export default function AboutPage() {
 								<div className="card card-resources">
 									<div className="img">
 										<img alt="lidar-paisagens-para-02-1-65c9fd2eee9f6"
-												 data-src="/images/lidar-paisagens-para-02-1-65c9fd2eee9f6-768x477.webp"
 												 className="attachment-medium_large lazyload"
-												 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+												 src="/images/lidar-paisagens-para-02-1-65c9fd2eee9f6-768x477.webp"/>
 									</div>
 									<div className="card-content">
 										<h3 className="h5">Pachama Launches First AI-Based Forest Tool</h3>
