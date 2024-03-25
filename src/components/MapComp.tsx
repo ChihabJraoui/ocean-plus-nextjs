@@ -1,22 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 import React from "react";
 import Image from "next/image";
-import Map, { Marker, MapRef } from "react-map-gl";
+import Map, {Marker, MapRef, ViewState} from "react-map-gl";
 import marker from "../assets/marker-editor.svg";
+import {useRouter} from "next/router";
+
+//@ts-ignore
+const viewport: Partial<ViewState> = {
+	latitude: 28.6448,
+	longitude: 77,
+	zoom: 1,
+	bearing: 0,
+};
 
 export default function MapComp(props: any) {
-	//@ts-ignore
-	const viewport = {
-		latitude: 28.6448,
-		longtitude: 77,
-		zoom: 0.5,
-		bearing: 0,
-		maxZoom: 1,
-	};
 	const map = useRef<MapRef>();
 	const [loop, setLoop] = useState(true);
 	const [spin, setSpin] = useState(true);
 	const [hoveredMarkerIndex, setHoveredMarkerIndex] = useState(null);
+	const router = useRouter();
 
 	useEffect(() => {
 		if (spin) {
@@ -52,7 +54,7 @@ export default function MapComp(props: any) {
 			id="mapboxgl-map"
 			style={{
 				position: "relative",
-				width: "950px",
+				width: "100%",
 				height: "799px",
 			}}
 		>
@@ -72,7 +74,7 @@ export default function MapComp(props: any) {
 							key={index}
 							longitude={item.lng}
 							latitude={item.ltd}
-							onClick={() => (window.location.href = `./explore/${item.name}`)}
+							onClick={() => router.push(`/explore/${item.name}`)}
 							anchor="bottom"
 						>
 							<div>

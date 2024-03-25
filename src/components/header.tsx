@@ -7,11 +7,12 @@ export default function Header() {
 			<div className="container">
 
 				<div className="logo visible-md">
-					<a href="/">
-						<img alt="Ocean Pulse" width="162"
+					<Link href="/">
+						<img alt="Ocean Pulse"
+								 width="162"
 								 className="attachment-large lazyload"
 								 src="/images/header-logo-pachama.svg" />
-					</a>
+					</Link>
 				</div>
 
 				<a href="#" className="nav-opener"><i className="icon-menu"></i></a>
@@ -55,7 +56,7 @@ export default function Header() {
 							</ul>
 						</li>
 						<li>
-							<a href="/get-started" className="btn ">Get started</a>
+							<Link href="/get-started" className="btn">Get started</Link>
 						</li>
 					</ul>
 				</div>
