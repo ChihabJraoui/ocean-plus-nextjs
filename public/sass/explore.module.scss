@@ -36,6 +36,10 @@
 			min-width: 520px;
 		}
 
+		@screen xl {
+			min-width: 560px;
+		}
+
 		ul.projects-list {
 			width: 100%;
 			display: flex;
