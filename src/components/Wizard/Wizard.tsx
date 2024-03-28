@@ -76,7 +76,7 @@ export default function Wizard(props) {
 					/>
 				);
 			case 5:
-				return <FormInfos prevStep={prevStep} />;
+				return <FormInfos prevStep={prevStep} coordinates={coordinates} area={area} deployedChoice={deployedChoice}/>;
 			default:
 				return null;
 		}
